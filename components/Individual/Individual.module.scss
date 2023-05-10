@@ -1,0 +1,173 @@
+.Individual {
+  margin-top: 20px;
+  max-width: 1920px;
+  height: 115vh;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+  .container {
+    position: relative;
+    background-color: #e3e9f3;
+    border-radius: 80px;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  .magazine {
+    top: 8px;
+    left: 4vw;
+    position: absolute;
+    z-index: 2;
+    width: 44vw;
+  }
+  .title {
+    position: absolute;
+    right: 11vw;
+    top: 30vh;
+
+    h4 {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 37px;
+      line-height: 140%;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+
+    .questions {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      width: 23vw;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+}
+
+@media screen and (max-width:1170px){
+  
+  .Individual {
+    margin-top: 20px;
+    max-width: 1920px;
+    height: 110vh;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    .container {
+      position: relative;
+      background-color: #e3e9f3;
+      border-radius: 80px;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .magazine {
+      top: 70px;
+      left: 2vw;
+      position: absolute;
+      z-index: 2;
+      width: 44vw;
+    }
+    .title {
+      position: absolute;
+      right: 1vw;
+      top: 30vh;
+  
+      h4 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 130%;
+      }
+  
+      h2 {
+
+        font-weight: 600;
+        font-size: 37px;
+        line-height: 140%;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+  
+      .questions {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 40vw;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:1024px){
+  
+  .Individual {
+    height: 110vh;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    .container {
+      position: relative;
+      background-color: #e3e9f3;
+      border-radius: 80px;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .magazine {
+      top: 22vh;
+      left: -2vw;
+      position: absolute;
+      z-index: 2;
+      width: 44vw;
+      transform: rotate(14deg);
+    }
+    .title {
+      position: absolute;
+      right: 2vw;
+      top: 60vh;
+      h4 {
+        position: absolute;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        bottom: 74vh;
+        right: 64vw;
+        width: 24vw;
+      }
+  
+      h2 {
+        position: absolute;
+        bottom: 64vh;
+        right: 53.4vw;
+        font-weight: 600;
+        font-size: 37px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+  
+      .questions {
+        
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 40vw;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+      }
+    }
+  }
+
+}

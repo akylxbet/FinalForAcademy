@@ -1,0 +1,15 @@
+.Paragraph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4vh;
+  img{
+    margin-right: 0.4vw;
+  }
+}
+
+@media screen and (max-width:1170px){
+    .Paragraph{
+        font-weight: 700;
+        line-height: 150%;
+    }
+}

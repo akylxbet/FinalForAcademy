@@ -1,0 +1,91 @@
+.Kyzrgyzstan {
+  background: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBX49dd.img?w=1920&h=1080&q=60&m=2&f=jpg");
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-attachment: fixed;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  padding-top: 10vh;
+  .left_block {
+    width: 45vw;
+    text-transform: uppercase;
+    h2 {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 140%;
+      letter-spacing: 2px;
+    }
+    h4 {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 140%;
+    }
+    .passport_block {
+      align-items: center;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 160%;
+      img {
+        transform: rotate(180deg);
+      }
+      display: flex;
+      flex-direction: row;
+      gap: 0.5vw;
+    }
+  }
+  .right_block {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Kyzrgyzstan {
+    display: flex;
+    flex-direction: column;
+    background-position: 1400px;
+    // padding-left: 0;
+    // padding-right: 0;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    margin: 0 auto;
+    border-radius: 58px;
+    .left_block {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 8%;
+      padding-top: 8vh;
+      h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 2px;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+      }
+      .passport_block {
+        img {
+            margin-right: 2vw;
+        }
+      }
+    }
+    .right_block {
+      padding: 3vw;
+      width: auto;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 14vh;
+      font-weight: 800;
+    }
+  }
+}

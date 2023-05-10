@@ -1,0 +1,1224 @@
+.Main {
+  max-width:1920px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;
+  position: relative;
+  .title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+    position: relative;
+    .upper_title {
+      line-height: 100%;
+      img {
+        position: absolute;
+        left: 830px;
+        top: -90px;
+      }
+      h2 {
+        font-weight: 120;
+        font-size: 36px;
+        letter-spacing: 2px;
+        padding-bottom: 16px;
+      }
+      h1 {
+        line-height: 104%;
+        font-weight: 120;
+        font-size: 54px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      .text_button {
+        padding-top: 0.5vh;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        button {
+          width: 280px;
+          height: 50px;
+          background: linear-gradient(
+            100.21deg,
+            #ffc95e -41.54%,
+            #ffc95e -22.64%,
+            #ffdd99 -9.16%,
+            #ffc95e 1.25%
+          );
+          box-shadow: 0px 4px 4px rgba(255, 204, 102, 0.3),
+            inset 6px 2px 18px #ffe4ae;
+          border-radius: 0px 35px 35px 35px;
+          border: none;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      p {
+        padding-top: 20px;
+        line-height: 20px;
+      }
+    }
+    .bottom_title {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      .garantie {
+        position: absolute;
+        top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #13465b;
+      }
+      img {
+        left: -54px;
+        position: absolute;
+        width: 160%;
+      }
+      .info_of_man {
+        color: #13465b;
+        text-align: right;
+        position: absolute;
+        right: -420px;
+        top: 180px;
+        h4 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+  .man {
+    position: absolute;
+    right: 0;
+    height: 97%;
+    width: 32%;
+    bottom: 0;
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (max-width:1440px) {
+  .Main {
+    max-width:1920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 130px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        img {
+          position: absolute;
+          left: 52vw;
+          top: -14vh;
+          width: 19vw;
+        }
+        h2 {
+          font-weight: 120;
+          font-size: 36px;
+          letter-spacing: 2px;
+          padding-bottom: 12px;
+        }
+        h1 {
+          line-height: 104%;
+          font-weight: 120;
+          font-size: 54px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+        }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #13465b;
+        }
+        img {
+          left: -5vw;
+          position: absolute;
+          width: 160%;
+        }
+        .info_of_man {
+          display: block;
+          color: #13465b;
+          text-align: right;
+          position: absolute;
+          right: -16vw;
+          top: 42vh;
+          h4 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+    .man {
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      width: 34%;
+      bottom: -3vh;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width:1366px) {
+  .Main {
+    max-width:1920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 130px;
+      position: relative;
+      .upper_title {
+        line-height: 200%;
+        img {
+          position: absolute;
+          left: 52vw;
+          top: -14vh;
+          width: 19vw;
+        }
+        h2 {
+          font-weight: 120;
+          font-size: 36px;
+          letter-spacing: 2px;
+          padding-bottom: 16px;
+        }
+        h1 {
+          line-height: 104%;
+          font-weight: 120;
+          font-size: 54px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+        }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #13465b;
+        }
+        img {
+          left: -5vw;
+          position: absolute;
+          width: 160%;
+        }
+        .info_of_man {
+          display: none;
+          color: #13465b;
+          text-align: right;
+          position: absolute;
+          right: -16vw;
+          top: 44vh;
+          h4 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+    .man{
+      height: 120vh;
+      top: 23px;
+    }
+  }
+  
+}
+
+@media screen and (max-width:1250px) {
+  .Main {
+    max-width:1920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 130px;
+      position: relative;
+      .upper_title {
+        line-height: 200%;
+        img {
+          position: absolute;
+          left: 760px;
+          top: -100px;
+        }
+        h2 {
+          font-weight: 120;
+          font-size: 36px;
+          letter-spacing: 2px;
+          padding-bottom: 16px;
+        }
+        h1 {
+          line-height: 104%;
+          font-weight: 120;
+          font-size: 54px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+        }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #13465b;
+        }
+        img {
+          left: -54px;
+          position: absolute;
+          width: 160%;
+        }
+        .info_of_man {
+          
+          h4 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+    .man {
+      position: absolute;
+      right: 0;
+      height: 87vh;
+      width: 32vw;
+      bottom: -6vh;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 1170px) {
+  .Main {
+    max-width:1920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 130px;
+      position: relative;
+      .upper_title {
+        line-height: 200%;
+        img {
+          position: absolute;
+          left: 760px;
+          top: -100px;
+        }
+        h2 {
+          font-weight: 120;
+          font-size: 36px;
+          letter-spacing: 2px;
+          padding-bottom: 16px;
+        }
+        h1 {
+          line-height: 104%;
+          font-weight: 120;
+          font-size: 54px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+        }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #13465b;
+        }
+        img {
+          left: -54px;
+          position: absolute;
+          width: 120%;
+        }
+        .info_of_man {
+          display: none;
+          }
+      }
+    }
+    .man {
+      top: 26vh;
+      height: 112vh;
+      width: 44vw;
+      right: 2px;
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .Main {
+    max-width:1920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 100px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        img {
+          position: absolute;
+          left: 66vw;
+          top: -12vh;  
+          width: 21vw;
+          height: 17vh;
+        }
+        h2 {
+          font-weight: 120;
+          font-size: 36px;
+          letter-spacing: 2px;
+          padding-bottom: 12px;
+        }
+        h1 {
+          line-height: 104%;
+          font-weight: 120;
+          font-size: 54px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+          }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #13465b;
+        }
+        img {
+          left: -34vw;
+          position: absolute;
+          top:10vh;
+          width: 56vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          color: #13465b;
+          text-align: right;
+          position: absolute;
+          right: 7vw;
+          top: 28vh;
+          p{
+            font-size: 17px;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .Main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 60px;
+      position: relative;
+      .upper_title {
+        line-height: 200%;
+        img {
+          position: absolute;
+          left: 74vw;
+          top: -12vh;  
+          width: 34%;
+          height: 17vh;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+          }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          color: #13465b;
+        }
+        img {
+          left: -36vw;
+          top:10vh;
+          width: 56vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 14vw;
+          top: 28vh;
+          p{
+            font-size: 17px;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .Main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    position: relative;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 60px;
+      position: relative;
+      .upper_title {
+        line-height: 200%;
+        img {
+          position: absolute;
+          left: 74vw;
+          top: -12vh;  
+          width: 34%;
+          height: 16vh;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+          }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          color: #13465b;
+        }
+        img {
+          left: -36vw;
+          top:10vh;
+          width: 100%;
+          height: 30vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 14vw;
+          top: 28vh;
+          p{
+            font-size: 17px;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+  
+@media screen and (max-width: 756px) {
+
+  .Main {
+    padding-top: 90px;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      position: relative;
+      .upper_title {
+        line-height: 200%;
+        img {
+          position: absolute;
+          left: 74vw;
+          top: -11vh;  
+          width: 22vw;
+          height: 16vh;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+          }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          color: #13465b;
+        }
+        img {
+          left: -36vw;
+          top:10vh;
+          width: 66vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 14vw;
+          top: 28vh;
+          p{
+            font-size: 17px;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+    .man {
+      top: 28vh;
+      height: 70vh;
+      width: 44vw;
+      right: 2px;
+      bottom: 10vh;
+    }
+  }
+}
+
+
+@media screen and (max-width: 670px) {
+
+  .Main {
+    margin-top: 12vh ;
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      position: relative;
+      .upper_title {
+        
+        h1{
+          font-size: 32px;
+        }
+        line-height: 100%;
+        h2{
+          font-size: 29px;
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
+        img {
+          padding-left: 10px;
+          position: absolute;
+          left: 68vw;
+          top: -11.7vh;  
+          width: 26vw;
+          height: 15vh;
+        }
+        .text_button {
+          width: 90vw;
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+          button{
+            width: 66%;
+          }
+          }
+        p {
+          padding-top: 20px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          color: #13465b;
+          
+          font-size: 20px;
+          text-align: left;
+        }
+        img {
+          left: -50vw;
+          top:18vh;
+          width: 100vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 35vw;
+          top: 14vh;
+          p{
+            font-size: 600;
+            font-size: 18px;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .man {
+      top:40vh;
+      height: 70%;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  .Main {
+   
+    .title {
+      padding-left: 20px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        h1{
+          font-weight: 600;
+          font-size: 32px;
+          text-align: left;
+          line-height: 120%;
+        }
+        h2{
+          font-size: 25px;
+          letter-spacing: 1px;
+          font-weight: 600;
+        }
+        img {
+          position: absolute;
+          left: 66vw;
+          top: -10vh;  
+          width: 30vw;
+          height: 14vh;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          height: 40px;
+          padding-top: 2px;
+          }
+        p {
+          padding-top: 10px;
+          line-height: 20px;
+          font-weight: 800;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 20px;
+          color: #13465b;
+          font-size: 20px;
+          text-align: left;
+          line-height: 22px;
+          font-weight: 800;
+        }
+        img {
+          left: -50vw;
+          top:18vh;
+          width: 100vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          left: 32vw;
+          top: 12vh;
+          text-align: left;
+          p{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 18px;
+          }
+          h4 {
+            
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    .man {
+      top: 33vh;
+    }
+  }
+}
+
+
+  @media screen and (max-width: 520px) {
+
+    .Main {
+     
+      .title {
+        padding-left: 20px;
+        position: relative;
+        .upper_title {
+          line-height: 100%;
+          h1{
+            font-size: 42px;
+            text-align: left;
+          }
+          h2{
+            font-size: 24px;
+            letter-spacing: 1px;
+          }
+          img {
+            position: absolute;
+            left: 66vw;
+            top: -10vh;  
+            width: 30vw;
+            height: 14vh;
+          }
+          .text_button {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            padding-top: 2px;
+            }
+          p {
+            padding-top: 10px;
+            line-height: 20px;
+          }
+        }
+        .bottom_title {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          img {
+            left: -50vw;
+            top:18vh;
+            width: 100vw;
+            height: 34vh;
+          }
+          .info_of_man {
+            display: block;
+            left: 32vw;
+            top: 12vh;
+            text-align: left;
+            p{
+              font-size: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+      .man {
+        object-fit:fill;
+        top: 40vh;
+        height: 70vh;
+        width: 60vw;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 440px) {
+  
+
+  .Main {
+   
+    .title {
+      padding-left: 20px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        h1{
+          font-size: 30px;
+          text-align: left;
+          font-weight: 400;
+          line-height: 30px;
+        }
+        h2{
+          font-size: 19px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          padding-bottom: 4px;
+        }
+        img {
+          position: absolute;
+          left: 66vw;
+          top: -10vh;  
+          width: 30vw;
+          height: 14vh;
+        }
+        .text_button {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          width: 380px;
+          height: 30px;
+          padding-top: 8px;
+          button{
+            width: 240px;
+            height: 40px;
+          }
+          }
+        p {
+          padding-top: 10px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 12x;
+          color: #13465b;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: left;
+        }
+        img {
+          left: -50vw;
+          top:18vh;
+          width: 100vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 25vw;
+          top: 14vh;
+          p{
+            font-size: 600;
+            font-size: 13px;
+            line-height: 14px;
+          }
+          h4 {
+            font-weight: 440;
+            font-size: 17px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .man {
+      top: 26vh;
+      height: 70vh;
+      width:66vw;
+      right: -6vw;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  .Main {
+   
+    .title {
+      padding-left: 10px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        h1{
+          font-size: 26px;
+          text-align: left;
+          font-weight: 540;
+          line-height: 26px;
+          letter-spacing: 0.7px;
+        }
+        h2{
+          line-height: 20px;
+          font-size: 19px;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          padding-bottom: 4px;
+        }
+        img {
+          margin-left: 6px;
+          position: absolute;
+          left: 66vw;
+          top: -10vh;  
+          width: 30vw;
+          height: 14vh;
+        }
+        .text_button {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          width: 380px;
+          height: 30px;
+          padding-top: 8px;
+          gap:5px
+          button{
+            width: 240px;
+            height: 40px;
+          }
+          }
+        p {
+          padding-top: 10px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 12x;
+          color: #13465b;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: left;
+        }
+        img {
+          left: -50vw;
+          top:18vh;
+          width: 100vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 18vw;
+          top: 14vh;
+          p{
+            font-size: 600;
+            font-size: 13px;
+            line-height: 14px;
+          }
+          h4 {
+            font-weight: 440;
+            font-size: 17px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .man {
+      top: 26vh;
+      height: 90vh;
+      width:36vw;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  .Main {
+   
+    .title {
+      padding-left: 10px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        h1{
+          font-size: 26px;
+          text-align: left;
+          font-weight: 540;
+          line-height: 26px;
+          letter-spacing: 0.7px;
+        }
+        h2{
+          line-height: 20px;
+          font-size: 19px;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          padding-bottom: 4px;
+        }
+        img {
+          margin-left: 6px;
+          position: absolute;
+          left: 66vw;
+          top: -10vh;  
+          width: 30vw;
+          height: 14vh;
+        }
+        .text_button {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          width: 380px;
+          height: 30px;
+          padding-top: 8px;
+          gap:5px
+          button{
+            width: 240px;
+            height: 40px;
+          }
+          }
+        p {
+          padding-top: 10px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        .garantie {
+          position: absolute;
+          top: 12x;
+          color: #13465b;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: left;
+        }
+        img {
+          left: -50vw;
+          top:18vh;
+          width: 100vw;
+          height: 34vh;
+        }
+        .info_of_man {
+          display: block;
+          right: 18vw;
+          top: 14vh;
+          p{
+            font-size: 600;
+            font-size: 13px;
+            line-height: 14px;
+          }
+          h4 {
+            font-weight: 440;
+            font-size: 17px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .man {
+      top: 26vh;
+      height: 90vh;
+      width:36vw;
+      right: 0;
+    }
+  }
+}
