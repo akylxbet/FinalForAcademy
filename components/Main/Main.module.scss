@@ -1,11 +1,13 @@
 .Main {
-  max-width:1920px;
+  max-width: 1920px;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 120px;
   position: relative;
+  overflow: hidden;
   .title {
     display: flex;
     flex-direction: column;
@@ -78,34 +80,22 @@
         position: absolute;
         width: 160%;
       }
-      .info_of_man {
-        color: #13465b;
-        text-align: right;
-        position: absolute;
-        right: -420px;
-        top: 180px;
-        h4 {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 32px;
-        }
+    }
+    .house {
+      position: absolute;
+      right: 0;
+      img {
+        height: 60vh;
+        width: 60vw;
+        object-fit: contain;
       }
     }
   }
-  .man {
-    position: absolute;
-    right: 0;
-    height: 97%;
-    width: 32%;
-    bottom: 0;
-    object-fit: cover;
-  }
 }
 
-
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .Main {
-    max-width:1920px;
+    max-width: 1920px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -164,36 +154,21 @@
           position: absolute;
           width: 160%;
         }
-        .info_of_man {
-          display: block;
-          color: #13465b;
-          text-align: right;
-          position: absolute;
-          right: -16vw;
-          top: 42vh;
-          h4 {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 23px;
-          }
-        }
       }
     }
-    .man {
-      position: absolute;
-      right: 0;
-      height: 100vh;
-      width: 34%;
-      bottom: -3vh;
+    .house {
+      img {
+        height: 60vh;
+        width: 60vw;
+        object-fit: contain;
+      }
     }
   }
-  
 }
 
-
-@media screen and (max-width:1366px) {
+@media screen and (max-width: 1366px) {
   .Main {
-    max-width:1920px;
+    max-width: 1920px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -252,32 +227,22 @@
           position: absolute;
           width: 160%;
         }
-        .info_of_man {
-          display: none;
-          color: #13465b;
-          text-align: right;
-          position: absolute;
-          right: -16vw;
-          top: 44vh;
-          h4 {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 23px;
-          }
-        }
       }
     }
-    .man{
-      height: 120vh;
-      top: 23px;
+    .house {
+      padding-top: 74px;
+      img {
+        height: 40vh;
+        width: 40vw;
+        object-fit: contain;
+      }
     }
   }
-  
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width: 1250px) {
   .Main {
-    max-width:1920px;
+    max-width: 1920px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -335,30 +300,14 @@
           position: absolute;
           width: 160%;
         }
-        .info_of_man {
-          
-          h4 {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 32px;
-          }
-        }
       }
     }
-    .man {
-      position: absolute;
-      right: 0;
-      height: 87vh;
-      width: 32vw;
-      bottom: -6vh;
-    }
   }
-  
 }
 
 @media screen and (max-width: 1170px) {
   .Main {
-    max-width:1920px;
+    max-width: 1920px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -416,22 +365,13 @@
           position: absolute;
           width: 120%;
         }
-        .info_of_man {
-          display: none;
-          }
       }
-    }
-    .man {
-      top: 26vh;
-      height: 112vh;
-      width: 44vw;
-      right: 2px;
     }
   }
 }
 @media screen and (max-width: 1040px) {
   .Main {
-    max-width:1920px;
+    max-width: 1920px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -447,7 +387,7 @@
         img {
           position: absolute;
           left: 66vw;
-          top: -12vh;  
+          top: -12vh;
           width: 21vw;
           height: 17vh;
         }
@@ -468,7 +408,7 @@
           display: flex;
           flex-direction: row;
           gap: 5%;
-          }
+        }
         p {
           padding-top: 20px;
           line-height: 20px;
@@ -489,26 +429,20 @@
         img {
           left: -34vw;
           position: absolute;
-          top:10vh;
+          top: 10vh;
           width: 56vw;
           height: 34vh;
         }
-        .info_of_man {
-          display: block;
-          color: #13465b;
-          text-align: right;
-          position: absolute;
-          right: 7vw;
-          top: 28vh;
-          p{
-            font-size: 17px;
-          }
-          h4 {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 32px;
-          }
-        }
+      }
+    }
+    .house{
+      img{
+        position: absolute;
+        
+        right:-2vw;
+        height: 80vh;
+        width: 70vw;
+        object-fit: contain;
       }
     }
   }
@@ -531,7 +465,7 @@
         img {
           position: absolute;
           left: 74vw;
-          top: -12vh;  
+          top: -12vh;
           width: 34%;
           height: 17vh;
         }
@@ -539,7 +473,7 @@
           display: flex;
           flex-direction: row;
           gap: 5%;
-          }
+        }
         p {
           padding-top: 20px;
           line-height: 20px;
@@ -556,7 +490,7 @@
         }
         img {
           left: -36vw;
-          top:10vh;
+          top: 10vh;
           width: 56vw;
           height: 34vh;
         }
@@ -564,7 +498,7 @@
           display: block;
           right: 14vw;
           top: 28vh;
-          p{
+          p {
             font-size: 17px;
           }
           h4 {
@@ -579,7 +513,6 @@
 }
 
 @media screen and (max-width: 780px) {
-
   .Main {
     height: 100vh;
     display: flex;
@@ -596,7 +529,7 @@
         img {
           position: absolute;
           left: 74vw;
-          top: -12vh;  
+          top: -12vh;
           width: 34%;
           height: 16vh;
         }
@@ -604,7 +537,7 @@
           display: flex;
           flex-direction: row;
           gap: 5%;
-          }
+        }
         p {
           padding-top: 20px;
           line-height: 20px;
@@ -621,30 +554,16 @@
         }
         img {
           left: -36vw;
-          top:10vh;
+          top: 10vh;
           width: 100%;
           height: 30vh;
-        }
-        .info_of_man {
-          display: block;
-          right: 14vw;
-          top: 28vh;
-          p{
-            font-size: 17px;
-          }
-          h4 {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 32px;
-          }
         }
       }
     }
   }
 }
-  
-@media screen and (max-width: 756px) {
 
+@media screen and (max-width: 756px) {
   .Main {
     padding-top: 90px;
     .title {
@@ -657,7 +576,7 @@
         img {
           position: absolute;
           left: 74vw;
-          top: -11vh;  
+          top: -11vh;
           width: 22vw;
           height: 16vh;
         }
@@ -665,7 +584,7 @@
           display: flex;
           flex-direction: row;
           gap: 5%;
-          }
+        }
         p {
           padding-top: 20px;
           line-height: 20px;
@@ -682,52 +601,37 @@
         }
         img {
           left: -36vw;
-          top:10vh;
+          top: 10vh;
           width: 66vw;
           height: 34vh;
         }
-        .info_of_man {
-          display: block;
-          right: 14vw;
-          top: 28vh;
-          p{
-            font-size: 17px;
-          }
-          h4 {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 32px;
-          }
-        }
       }
     }
-    .man {
-      top: 28vh;
-      height: 70vh;
-      width: 44vw;
-      right: 2px;
-      bottom: 10vh;
+    .house{
+      display: none;
+      img{
+        height: 60vh;
+        width: 60vw;
+        object-fit: contain;
+      }
     }
   }
 }
 
-
 @media screen and (max-width: 670px) {
-
   .Main {
-    margin-top: 12vh ;
+    margin-top: 12vh;
     .title {
       display: flex;
       flex-direction: column;
       padding-left: 20px;
       position: relative;
       .upper_title {
-        
-        h1{
+        h1 {
           font-size: 32px;
         }
         line-height: 100%;
-        h2{
+        h2 {
           font-size: 29px;
           letter-spacing: 1px;
           font-weight: 400;
@@ -736,7 +640,7 @@
           padding-left: 10px;
           position: absolute;
           left: 68vw;
-          top: -11.7vh;  
+          top: -11.7vh;
           width: 26vw;
           height: 15vh;
         }
@@ -745,10 +649,10 @@
           display: flex;
           flex-direction: row;
           gap: 5%;
-          button{
+          button {
             width: 66%;
           }
-          }
+        }
         p {
           padding-top: 20px;
           line-height: 20px;
@@ -762,56 +666,35 @@
           position: absolute;
           top: 20px;
           color: #13465b;
-          
+
           font-size: 20px;
           text-align: left;
         }
         img {
           left: -50vw;
-          top:18vh;
+          top: 18vh;
           width: 100vw;
           height: 34vh;
         }
-        .info_of_man {
-          display: block;
-          right: 35vw;
-          top: 14vh;
-          p{
-            font-size: 600;
-            font-size: 18px;
-          }
-          h4 {
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 24px;
-          }
-        }
       }
-    }
-    .man {
-      top:40vh;
-      height: 70%;
-      right: 0;
     }
   }
 }
 
 @media screen and (max-width: 560px) {
-
   .Main {
-   
     .title {
       padding-left: 20px;
       position: relative;
       .upper_title {
         line-height: 100%;
-        h1{
+        h1 {
           font-weight: 600;
           font-size: 32px;
           text-align: left;
           line-height: 120%;
         }
-        h2{
+        h2 {
           font-size: 25px;
           letter-spacing: 1px;
           font-weight: 600;
@@ -819,7 +702,7 @@
         img {
           position: absolute;
           left: 66vw;
-          top: -10vh;  
+          top: -10vh;
           width: 30vw;
           height: 14vh;
         }
@@ -828,7 +711,7 @@
           flex-direction: row;
           height: 40px;
           padding-top: 2px;
-          }
+        }
         p {
           padding-top: 10px;
           line-height: 20px;
@@ -850,120 +733,77 @@
         }
         img {
           left: -50vw;
-          top:18vh;
+          top: 18vh;
           width: 100vw;
           height: 34vh;
         }
-        .info_of_man {
-          display: block;
-          left: 32vw;
-          top: 12vh;
-          text-align: left;
-          p{
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 18px;
-          }
-          h4 {
-            
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 22px;
-          }
-        }
       }
-    }
-    .man {
-      top: 33vh;
     }
   }
 }
 
-
-  @media screen and (max-width: 520px) {
-
-    .Main {
-     
-      .title {
-        padding-left: 20px;
-        position: relative;
-        .upper_title {
-          line-height: 100%;
-          h1{
-            font-size: 42px;
-            text-align: left;
-          }
-          h2{
-            font-size: 24px;
-            letter-spacing: 1px;
-          }
-          img {
-            position: absolute;
-            left: 66vw;
-            top: -10vh;  
-            width: 30vw;
-            height: 14vh;
-          }
-          .text_button {
-            display: flex;
-            flex-direction: row;
-            height: 40px;
-            padding-top: 2px;
-            }
-          p {
-            padding-top: 10px;
-            line-height: 20px;
-          }
-        }
-        .bottom_title {
-          position: relative;
-          display: flex;
-          flex-direction: row;
-          img {
-            left: -50vw;
-            top:18vh;
-            width: 100vw;
-            height: 34vh;
-          }
-          .info_of_man {
-            display: block;
-            left: 32vw;
-            top: 12vh;
-            text-align: left;
-            p{
-              font-size: 600;
-              font-size: 18px;
-              line-height: 18px;
-            }
-          }
-        }
-      }
-      .man {
-        object-fit:fill;
-        top: 40vh;
-        height: 70vh;
-        width: 60vw;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 440px) {
-  
-
+@media screen and (max-width: 520px) {
   .Main {
-   
     .title {
       padding-left: 20px;
       position: relative;
       .upper_title {
         line-height: 100%;
-        h1{
+        h1 {
+          font-size: 42px;
+          text-align: left;
+        }
+        h2 {
+          font-size: 24px;
+          letter-spacing: 1px;
+        }
+        img {
+          position: absolute;
+          left: 66vw;
+          top: -10vh;
+          width: 30vw;
+          height: 14vh;
+        }
+        .text_button {
+          display: flex;
+          flex-direction: row;
+          height: 40px;
+          padding-top: 2px;
+        }
+        p {
+          padding-top: 10px;
+          line-height: 20px;
+        }
+      }
+      .bottom_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        img {
+          left: -50vw;
+          top: 18vh;
+          width: 100vw;
+          height: 34vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .Main {
+    .title {
+      padding-left: 20px;
+      position: relative;
+      .upper_title {
+        line-height: 100%;
+        h1 {
           font-size: 30px;
           text-align: left;
           font-weight: 400;
           line-height: 30px;
         }
-        h2{
+        h2 {
           font-size: 19px;
           font-weight: 500;
           letter-spacing: 1px;
@@ -972,7 +812,7 @@
         img {
           position: absolute;
           left: 66vw;
-          top: -10vh;  
+          top: -10vh;
           width: 30vw;
           height: 14vh;
         }
@@ -983,11 +823,11 @@
           width: 380px;
           height: 30px;
           padding-top: 8px;
-          button{
+          button {
             width: 240px;
             height: 40px;
           }
-          }
+        }
         p {
           padding-top: 10px;
           line-height: 20px;
@@ -1007,53 +847,30 @@
         }
         img {
           left: -50vw;
-          top:18vh;
+          top: 18vh;
           width: 100vw;
           height: 34vh;
         }
-        .info_of_man {
-          display: block;
-          right: 25vw;
-          top: 14vh;
-          p{
-            font-size: 600;
-            font-size: 13px;
-            line-height: 14px;
-          }
-          h4 {
-            font-weight: 440;
-            font-size: 17px;
-            line-height: 18px;
-          }
-        }
       }
-    }
-    .man {
-      top: 26vh;
-      height: 70vh;
-      width:66vw;
-      right: -6vw;
     }
   }
 }
 
 @media screen and (max-width: 410px) {
-
   .Main {
-   
     .title {
       padding-left: 10px;
       position: relative;
       .upper_title {
         line-height: 100%;
-        h1{
+        h1 {
           font-size: 26px;
           text-align: left;
           font-weight: 540;
           line-height: 26px;
           letter-spacing: 0.7px;
         }
-        h2{
+        h2 {
           line-height: 20px;
           font-size: 19px;
           font-weight: 500;
@@ -1064,7 +881,7 @@
           margin-left: 6px;
           position: absolute;
           left: 66vw;
-          top: -10vh;  
+          top: -10vh;
           width: 30vw;
           height: 14vh;
         }
@@ -1075,12 +892,11 @@
           width: 380px;
           height: 30px;
           padding-top: 8px;
-          gap:5px
-          button{
+          gap: 5px button {
             width: 240px;
             height: 40px;
           }
-          }
+        }
         p {
           padding-top: 10px;
           line-height: 20px;
@@ -1100,54 +916,30 @@
         }
         img {
           left: -50vw;
-          top:18vh;
+          top: 18vh;
           width: 100vw;
           height: 34vh;
         }
-        .info_of_man {
-          display: block;
-          right: 18vw;
-          top: 14vh;
-          p{
-            font-size: 600;
-            font-size: 13px;
-            line-height: 14px;
-          }
-          h4 {
-            font-weight: 440;
-            font-size: 17px;
-            line-height: 18px;
-          }
-        }
       }
-    }
-    .man {
-      top: 26vh;
-      height: 90vh;
-      width:36vw;
-      right: 0;
     }
   }
 }
 
 @media screen and (max-width: 360px) {
-
   .Main {
-   
     .title {
       padding-left: 10px;
       position: relative;
       .upper_title {
-       
-        h1{
+        h1 {
           font-size: 26px;
           text-align: left;
           font-weight: 540;
           line-height: 26px;
           letter-spacing: 0.7px;
-          line-height: 120%;   
+          line-height: 120%;
         }
-        h2{
+        h2 {
           line-height: 20px;
           font-size: 17px;
           font-weight: 500;
@@ -1159,7 +951,7 @@
           margin-left: 6px;
           position: absolute;
           left: 66vw;
-          top: -8.4vh;  
+          top: -8.4vh;
           width: 28vw;
           height: 12vh;
         }
@@ -1170,12 +962,11 @@
           width: 380px;
           height: 30px;
           padding-top: 8px;
-          gap:5px
-          button{
+          gap: 5px button {
             width: 240px;
             height: 40px;
           }
-          }
+        }
         p {
           padding-top: 10px;
           line-height: 20px;
@@ -1195,32 +986,11 @@
         }
         img {
           left: -50vw;
-          top:18vh;
+          top: 18vh;
           width: 100vw;
-          height:24vh;
-        }
-        .info_of_man {
-          display: block;
-          left: 28vw;
-          top: 14vh;
-          p{
-            font-size: 600;
-            font-size: 13px;
-            line-height: 14px;
-          }
-          h4 {
-            font-weight: 440;
-            font-size: 17px;
-            line-height: 18px;
-          }
+          height: 24vh;
         }
       }
-    }
-    .man {
-      top: 42vh;
-      height: 64vh;
-      width:70vw;
-      right: -10vw;
     }
   }
 }

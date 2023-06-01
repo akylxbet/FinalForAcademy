@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server":"json-server --watch -p 4000 db.json"
+    "server": "json-server --watch -p 4000 db.json"
   },
   "dependencies": {
-    "next": "13.3.3",
+    "framer-motion": "^10.12.16",
+    "next": "^13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.62.1"

@@ -4,17 +4,31 @@ const Header = () => {
   return (
     <div className={s.Header}>
       <div className={s.logo}>
-        
+        <img src="/logo.png" alt="img" />
+        <h1>BozuyKG</h1>
       </div>
-      <nav className={s.navigation}></nav>
-      <div className={s.contacts}>
-        <div className={s.number}>
-          <a>+971 33 305 3355</a>
-          <h5>UAE, Dubai, Control Tower, office 0204</h5>
+      <nav className={s.navigation}>
+        <ul>
+          <li>
+            <a href="#">Проекты</a>
+          </li>
+          <li>
+            <a href="#">Районы</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+        <div className={s.lang}>
+            <button>eng</button>
+        </div> 
+        <div className={s.auth}>
+            <button>Регистрация</button>
         </div>
-        <div className={s.social}>UAE, Dubai, Control Tower, office 0204</div>
-      </div>
-      <div className={s.language}></div>
     </div>
   );
 };
