@@ -1,0 +1,88 @@
+.CardsOfTheBest {
+  width: 440px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  .card_img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: 2.5s ease;
+  }
+
+  &:hover {
+    .card_img {
+      opacity: 4;
+      transition: 2s;
+    }
+
+    &::before {
+      content: "";
+      transition: 2s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 52px;
+      background-color: rgba(0, 0, 0, 0.219);
+      z-index: 2;
+    }
+  }
+
+  .title {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1vh;
+    bottom: 3.7vh;
+
+    h3 {
+      z-index: 3;
+      color: white;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .projects,
+    .prices,
+    .buttonz {
+      position: relative;
+      z-index: 4;
+    }
+  }
+
+  .projects {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    color: #13465b;
+    padding: 8px 16px;
+    border-radius: 12px;
+    gap: 0.4vw;
+  }
+
+  .prices {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    color: #13465b;
+    padding: 8px 16px;
+    border-radius: 13px;
+    gap: 0.3vw;
+  }
+
+  .buttonz {
+    height: 5vh;
+    width: 96%;
+  }
+}

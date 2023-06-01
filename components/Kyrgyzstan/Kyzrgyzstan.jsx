@@ -6,7 +6,7 @@ const Kyzrgyzstan = () => {
     <section className={s.Kyzrgyzstan}>
       <div className={s.left_block}>
         <h4>Почему стоит выбрать</h4>
-        <h2>ДУБАЙ ДЛЯ ЖИЗНИ <br/> И ИНВЕСТИЦИЙ</h2>
+        <h2>БИШКЕК ДЛЯ ЖИЗНИ <br/> И ИНВЕСТИЦИЙ</h2>
         <div className={s.passport_block}>
           <img src="./andrew.png" alt="" />
           Получение ВНЖ Дубая <br />

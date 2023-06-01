@@ -1,7 +1,7 @@
 .Main {
   max-width:1920px;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: row;
   padding-top: 120px;
@@ -1130,7 +1130,7 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 360px) {
 
   .Main {
    
@@ -1138,28 +1138,30 @@
       padding-left: 10px;
       position: relative;
       .upper_title {
-        line-height: 100%;
+       
         h1{
           font-size: 26px;
           text-align: left;
           font-weight: 540;
           line-height: 26px;
           letter-spacing: 0.7px;
+          line-height: 120%;   
         }
         h2{
           line-height: 20px;
-          font-size: 19px;
+          font-size: 17px;
           font-weight: 500;
           letter-spacing: 0.4px;
           padding-bottom: 4px;
+          line-height: 120%;
         }
         img {
           margin-left: 6px;
           position: absolute;
           left: 66vw;
-          top: -10vh;  
-          width: 30vw;
-          height: 14vh;
+          top: -8.4vh;  
+          width: 28vw;
+          height: 12vh;
         }
         .text_button {
           align-items: center;
@@ -1195,11 +1197,11 @@
           left: -50vw;
           top:18vh;
           width: 100vw;
-          height: 34vh;
+          height:24vh;
         }
         .info_of_man {
           display: block;
-          right: 18vw;
+          left: 28vw;
           top: 14vh;
           p{
             font-size: 600;
@@ -1215,10 +1217,10 @@
       }
     }
     .man {
-      top: 26vh;
-      height: 90vh;
-      width:36vw;
-      right: 0;
+      top: 42vh;
+      height: 64vh;
+      width:70vw;
+      right: -10vw;
     }
   }
 }

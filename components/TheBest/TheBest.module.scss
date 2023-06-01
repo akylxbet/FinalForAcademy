@@ -1,0 +1,32 @@
+.TheBest{
+    width: auto;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 10vh;
+    
+    gap: 4vh;
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        gap: 0.2vh;
+        h2{
+            font-size: 24px;
+        }
+        h1{
+            font-size: 56px;
+        }
+        p{
+            text-transform: lowercase;
+            color: #13465B;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 160%;
+        }
+    }
+}
