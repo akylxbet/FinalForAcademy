@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import s from './City.module.scss';
 import city from '../../public/City.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const City = () => {
     const [cards, setCard] = useState(
@@ -57,7 +58,12 @@ const City = () => {
                         <div className={s.card} key={card.id}>
                             <Image src={card.img} alt="city" />
                             <h2>{card.name}</h2>
-                            <button>УЗНАТЬ БОЛЬШЕ</button>
+                            
+                            <button>
+                                <Link href="/cityInfo">
+                                УЗНАТЬ БОЛЬШЕ
+                                </Link>
+                            </button>
                         </div>
                     ))}
                 </div>

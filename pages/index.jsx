@@ -26,8 +26,8 @@ export default function Home() {
       <Individual/>
       <Kyzrgyzstan/>
       <TheBest/> */}
-      {/* <City/> */}
-      <InfoCity/>
+      <City/>
+      {/* <InfoCity/> */}
     </>
   )
 }
