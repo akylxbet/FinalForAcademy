@@ -7,6 +7,8 @@ import Individual from '@/components/Individual/Individual'
 import Kyzrgyzstan from '@/components/Kyrgyzstan/Kyzrgyzstan'
 import TheBest from '@/components/TheBest/TheBest'
 import Header from '@/components/Header/Header'
+import City from '@/components/City/City'
+import InfoCity from '@/components/InfoCity/InfoCity'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,11 +21,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/LittileCity.png" />
       </Head>
-      <Header/>
+      {/* <Header/>
       <Main/>
       <Individual/>
       <Kyzrgyzstan/>
-      <TheBest/>
+      <TheBest/> */}
+      {/* <City/> */}
+      <InfoCity/>
     </>
   )
 }

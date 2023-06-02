@@ -1,0 +1,342 @@
+.container {
+  width: 100%;
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    h1 {
+      margin-bottom: 30px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 120%;
+      color: #000000;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      gap: 40px;
+      .card {
+        max-width: 367px;
+        padding: 15px;
+        width: 100%;
+        height: 94px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #a5a2a2;
+        border-radius: 50px;
+        img {
+          width: 64px;
+          height: 64px;
+        }
+        .title {
+          h3 {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+          }
+          h2 {
+            white-space: nowrap;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 45px;
+      }
+      .cards {
+        gap: 30px;
+        .card {
+          max-width: 307px;
+          width: 100%;
+          height: 90px;
+
+          img {
+            width: 62px;
+            height: 62px;
+          }
+          .title {
+            h3 {
+              font-size: 16px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 42px;
+      }
+      .cards {
+        gap: 25px;
+        .card {
+          max-width: 287px;
+          width: 100%;
+          height: 90px;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          .title {
+            h3 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 38px;
+      }
+      .cards {
+        gap: 20px;
+        .card {
+          max-width: 257px;
+          width: 100%;
+          height: 80px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          .title {
+            h3 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 38px;
+      }
+      .cards {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 40px;
+        .card {
+          max-width: 357px;
+          width: 100%;
+          height: 80px;
+          img {
+            width: 64px;
+            height: 64px;
+          }
+          .title {
+            h3 {
+              font-size: 18px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      .content {
+        h1 {
+          font-size: 35px;
+        }
+        .cards {
+          grid-template-columns: 1fr 1fr;
+          place-items: center;
+          gap: 30px;
+          .card {
+            max-width: 287px;
+            width: 100%;
+            height: 80px;
+            img {
+              width: 62px;
+              height: 62px;
+            }
+            .title {
+              h3 {
+                font-size: 16px;
+              }
+              h2 {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .container {
+      .content {
+        h1 {
+          font-size: 30px;
+        }
+        .cards {
+          grid-template-columns: 1fr 1fr;
+          place-items: center;
+          gap: 30px;
+          .card {
+            max-width: 257px;
+            width: 100%;
+            height: 75px;
+            img {
+              width: 60px;
+              height: 60px;
+            }
+            .title {
+              h3 {
+                font-size: 14px;
+              }
+              h2 {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    .container {
+      .content {
+        h1 {
+          font-size: 30px;
+        }
+        .cards {
+          grid-template-columns: 1fr 1fr;
+          place-items: center;
+          gap: 25px;
+          .card {
+            max-width: 227px;
+            width: 100%;
+            height: 70px;
+            img {
+              width: 50px;
+              height: 50px;
+            }
+            .title {
+              h3 {
+                font-size: 13px;
+              }
+              h2 {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    .container {
+      .content {
+        h1 {
+          font-size: 25px;
+        }
+        .cards {
+          grid-template-columns: 1fr;
+          place-items: center;
+          gap: 30px;
+          .card {
+            max-width: 327px;
+            width: 100%;
+            height: 90px;
+            img {
+              width: 64px;
+              height: 64px;
+            }
+            .title {
+              h3 {
+                font-size: 17px;
+              }
+              h2 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .container {
+      .content {
+        h1 {
+          font-size: 22px;
+        }
+        .cards {
+          gap: 25px;
+          .card {
+            max-width: 267px;
+            width: 100%;
+            height: 80px;
+            img {
+              width: 60px;
+              height: 60px;
+            }
+            .title {
+              h3 {
+                font-size: 16px;
+              }
+              h2 {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
