@@ -604,14 +604,17 @@
           top: 10vh;
           width: 66vw;
           height: 34vh;
+          display: none;
         }
       }
     }
     .house{
-      display: none;
+      display: block;
       img{
-        height: 60vh;
-        width: 60vw;
+        bottom:-4vh;
+        left: 15vw;
+        height: 75%;
+        width: 80%;
         object-fit: contain;
       }
     }

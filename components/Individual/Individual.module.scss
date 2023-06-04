@@ -126,8 +126,9 @@
       flex-direction: row;
     }
     .magazine {
-      top: 22vh;
-      left: -2vw;
+
+      top:32vh;
+      left: 2vw;
       position: absolute;
       z-index: 2;
       width: 44vw;
@@ -140,7 +141,7 @@
       h4 {
         position: absolute;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 46px;
         line-height: 100%;
         bottom: 74vh;
         right: 64vw;
@@ -149,13 +150,13 @@
   
       h2 {
         position: absolute;
-        bottom: 64vh;
-        right: 53.4vw;
+        bottom: 66vh;
         font-weight: 600;
-        font-size: 37px;
+        font-size: 56px;
         line-height: 100%;
         letter-spacing: 1px;
         text-align: left;
+        left: -48vw;
       }
   
       .questions {
@@ -170,4 +171,163 @@
     }
   }
 
+}
+
+@media screen and (max-width:950px){
+  
+  .Individual {
+    height: 110vh;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    .container {
+      position: relative;
+      background-color: #e3e9f3;
+      border-radius: 80px;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .magazine {
+      top:36vh;
+      left: 2vw;
+      position: absolute;
+      z-index: 2;
+      width: 50vw;
+      transform: rotate(14deg);
+    }
+    .title {
+      position: absolute;
+      right: 2vw;
+      top: 60vh;
+      h4 {
+        position: absolute;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 100%;
+        bottom: 74vh;
+        right: 64vw;
+        width: 24vw;
+      }
+  
+      h2 {
+        position: absolute;
+        bottom: 67vh;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-align: left;
+        left: -48vw;
+      }
+  
+      .questions {
+        
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 40vw;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:860px){
+  
+  .Individual {
+    height: 110vh;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    .container {
+      position: relative;
+      background-color: #e3e9f3;
+      border-radius: 80px;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .magazine {
+      top:42vh;
+      left: 2vw;
+      position: absolute;
+      z-index: 2;
+      width: 45vw;
+      transform: rotate(14deg);
+    }
+    .title {
+      position: absolute;
+      right: 2vw;
+      top: 60vh;
+      h4 {
+        position: absolute;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 100%;
+        bottom: 74vh;
+        right: 64vw;
+        width: 24vw;
+      }
+  
+      h2 {
+        position: absolute;
+        bottom: 66vh;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-align: left;
+        left: -48vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:780px){
+  
+  .Individual {
+    height: 110vh;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    .container {
+      position: relative;
+      background-color: #e3e9f3;
+      border-radius: 80px;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .title {
+      position: absolute;
+      right: 2vw;
+      top: 60vh;
+      h4 {
+        position: absolute;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 100%;
+        bottom: 74vh;
+        right: 64vw;
+        width: 24vw;
+      }
+  
+      h2 {
+        position: absolute;
+        bottom: 66vh;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-align: left;
+        left: -48vw;
+      }
+    }
+  }
 }

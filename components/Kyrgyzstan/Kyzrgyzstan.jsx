@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Kyrgyzstan.module.scss";
-import Paragraph from "../Paragraph/Paragraph";
+import Paragraph from "../UI/Paragraph/Paragraph";
 const Kyzrgyzstan = () => {
   return (
     <section className={s.Kyzrgyzstan}>

@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Individual.module.scss";
-import Paragraph from "../Paragraph/Paragraph";
-import AnotherButton from "../AnotherButton/AnotherButton";
+import Paragraph from "../UI/Paragraph/Paragraph";
+import AnotherButton from "../UI/AnotherButton/AnotherButton";
 
 const Individual = () => {
   return (

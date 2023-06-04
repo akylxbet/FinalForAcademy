@@ -1,19 +1,19 @@
 import React from "react";
 import s from "./CardsOfTheBest.module.scss";
-import Button from "../Button/Button";
-const CardsOfTheBest = () => {
+import Button from "../UI/Button/Button";
+const CardsOfTheBest = ({name, img, price, projects, id}) => {
   return (
     <div className={s.CardsOfTheBest}>
-      <img className={s.card_img}src="./Villas.png" alt="" />
+      <img className={s.card_img}src={img} alt="" />
       <div className={s.title}>
-        <h3>Виллы и Таунхаусы</h3>
+        <h3>{name}</h3>
         <div className={s.projects}>
           <img src="./Hose.svg" alt="" />
-          <p>49 проектов</p>
+          <p>{projects} проектов</p>
         </div>
         <div className={s.prices}>
           <img src="./Price.svg" alt="" />
-          <p>от 125 000$ до 5 000 000$</p>
+          <p>{price}</p>
         </div>
         <div className={s.buttonz}>
         <Button>Узнать</Button>

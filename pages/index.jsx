@@ -1,16 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import Main from '@/components/Main/Main'
-import Individual from '@/components/Individual/Individual'
 import Kyzrgyzstan from '@/components/Kyrgyzstan/Kyzrgyzstan'
 import TheBest from '@/components/TheBest/TheBest'
 import Header from '@/components/Header/Header'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
+  
+  const {products, loading, error} = useSelector(state => state.products)
+
   return (
     <>
       <Head>
@@ -19,11 +17,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/LittileCity.png" />
       </Head>
-      <Header/>
       <Main/>
-      <Individual/>
       <Kyzrgyzstan/>
       <TheBest/>
+      
     </>
   )
 }

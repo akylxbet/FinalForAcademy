@@ -1,0 +1,101 @@
+.card_down { 
+    padding-top: 50px;
+    .card_filtr {
+        width: 300px;
+        height: 500px;
+        background: #FFC95E;
+    }
+
+}
+.card_cartochki {
+    display: flex;
+    padding-top: 50px;
+    .card_cartochki_card {
+        width: 300px;
+        height: 180px;
+
+        .card_cartochki_card_desc {
+            display: flex;
+            padding-top: 10px;
+            justify-content: space-between;
+            
+            .card_cartochki_card_desc p {
+                font-size: 18px;
+                color: black;
+            }
+
+        }
+
+
+        .card_cartochki_card_desc h1 {
+            font-size: 22px;
+            white-space: nowrap;
+        }
+
+        .card_cartochki_card_title p {
+            font-size: 10px;
+        }
+
+        .card_cartochki_card_photo {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+
+        .card_cartochki_card_photo_vila {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+
+        .card_cartochki_card_photo_vila p {
+            font-size: 12px;
+        }
+
+        .card_cartochki_card_photo_vila img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .card_cartochki_card_photo_kvadrat {
+            align-items: center;
+            display: flex;
+            gap: 10px;                }
+
+        .card_cartochki_card_photo_kvadrat p {
+            font-size: 12px;
+        }
+
+        .card_cartochki_card_photo_kvadrat img {
+            width: 20px;
+            height: 20px;
+        }
+        .card_cartochki_card_photo_group{
+            align-items: center;
+            display: flex;
+            gap: 10px;                }
+        .card_cartochki_card_photo_group p{
+            font-size: 12px;
+        }
+        .card_cartochki_card_photo_group img{
+            width: 20px;
+            height: 20px;
+        }
+        .card_cartochki_card_photo_map p{
+            font-size: 12px;
+        }
+        .card_cartochki_card_photo_map img{
+            width: 20px;
+            height: 20px;
+        }
+        .card_cartochki_card_photo_map{
+            align-items: center;
+            display: flex;
+            gap: 10px;                }
+    }
+
+    .card_cartochki_card img {
+        width: 300px;
+        height: 180px;
+    }
+}

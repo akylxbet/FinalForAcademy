@@ -1,10 +1,11 @@
 .CardsOfTheBest {
-  width: 440px;
+  width:auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 24px;
+  padding-right: 0;
   .card_img {
     object-fit: contain;
     width: 100%;
@@ -59,7 +60,7 @@
     width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: #f5f7fa;
     color: #13465b;
@@ -69,10 +70,10 @@
   }
 
   .prices {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: #f5f7fa;
     color: #13465b;
@@ -83,6 +84,292 @@
 
   .buttonz {
     height: 5vh;
-    width: 96%;
+    width: 100%;
   }
+}
+
+@media screen and (max-width:1366px) {
+  .CardsOfTheBest {
+    height: 74vh;
+    width: 32vw;
+    position: relative;
+    display: flex;
+    flex-direction: start;
+    align-items: center;
+    border-radius: 24px;
+    padding-right: 0;
+    .card_img {
+      border-radius: 48px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: 2.5s ease;
+    }
+  
+    &:hover {
+      .card_img {
+        opacity: 4;
+        transition: 2s;
+      }
+  
+      &::before {
+        content: "";
+        transition: 2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 52px;
+        background-color: rgba(0, 0, 0, 0.219);
+        z-index: 2;
+      }
+    }
+  
+    .title {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      gap: 1vh;
+      bottom: 3.7vh;
+  
+      h3 {
+        z-index: 3;
+        color: white;
+        font-size: 22px;
+        margin: 0;
+      }
+  
+      .projects,
+      .prices,
+      .buttonz {
+        position: relative;
+        z-index: 4;
+      }
+    }
+  
+    .projects {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      background-color: #f5f7fa;
+      color: #13465b;
+      padding: 8px 16px;
+      border-radius: 12px;
+      gap: 0.4vw;
+    }
+  
+    .prices {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      background-color: #f5f7fa;
+      color: #13465b;
+      padding: 8px 16px;
+      border-radius: 13px;
+      gap: 0.3vw;
+    }
+  
+    .buttonz {
+      height: 5vh;
+      width: 100%;
+    }
+  }
+  
+}
+
+@media screen and (max-width:1240px) {
+  .CardsOfTheBest {
+    height: 570px;
+    width:570px;
+    position: relative;
+    display: flex;
+    flex-direction: start;
+    align-items: center;
+    border-radius: 24px;
+    padding-right: 0;
+    .card_img {
+      border-radius: 48px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: 2.5s ease;
+    }
+  
+    &:hover {
+      .card_img {
+        opacity: 4;
+        transition: 2s;
+      }
+  
+      &::before {
+        content: "";
+        transition: 2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 52px;
+        background-color: rgba(0, 0, 0, 0.219);
+        z-index: 2;
+      }
+    }
+  
+    .title {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      gap: 1vh;
+      bottom: 3.7vh;
+  
+      h3 {
+        z-index: 3;
+        color: white;
+        font-size: 22px;
+        margin: 0;
+      }
+  
+      .projects,
+      .prices,
+      .buttonz {
+        position: relative;
+        z-index: 4;
+      }
+    }
+  
+    .projects {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      background-color: #f5f7fa;
+      color: #13465b;
+      padding: 8px 16px;
+      border-radius: 12px;
+      gap: 0.4vw;
+    }
+  
+    .prices {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      background-color: #f5f7fa;
+      color: #13465b;
+      padding: 8px 16px;
+      border-radius: 13px;
+      gap: 0.3vw;
+    }
+  
+    .buttonz {
+      height: 5vh;
+      width: 100%;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width:560px) {
+  .CardsOfTheBest {
+    height: 380px;
+    width: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: start;
+    align-items: center;
+    border-radius: 24px;
+    padding-right: 0;
+    .card_img {
+      border-radius: 48px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: 2.5s ease;
+    }
+  
+    &:hover {
+      .card_img {
+        opacity: 4;
+        transition: 2s;
+      }
+  
+      &::before {
+        content: "";
+        transition: 2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 52px;
+        background-color: rgba(0, 0, 0, 0.219);
+        z-index: 2;
+      }
+    }
+  
+    .title {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      gap: 1vh;
+      bottom: 3.7vh;
+  
+      h3 {
+        z-index: 3;
+        color: white;
+        font-size: 22px;
+        margin: 0;
+      }
+  
+      .projects,
+      .prices,
+      .buttonz {
+        position: relative;
+        z-index: 4;
+      }
+    }
+  
+    .projects {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      background-color: #f5f7fa;
+      color: #13465b;
+      padding: 8px 16px;
+      border-radius: 12px;
+      gap: 0.4vw;
+    }
+  
+    .prices {
+      width: 85%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      background-color: #f5f7fa;
+      color: #13465b;
+      padding: 8px 16px;
+      border-radius: 13px;
+      gap: 0.3vw;
+    }
+  
+    .buttonz {
+      height: 5vh;
+      width: 100%;
+    }
+  }
+  
 }

@@ -1,15 +1,15 @@
 .TheBest{
     width: auto;
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding-right: 8vw;
     padding-left: 8vw;
     padding-top: 10vh;
-    
+    padding-bottom: 6vh;
     gap: 4vh;
-    
+    overflow: hidden;
     .title{
         display: flex;
         flex-direction: column;
@@ -19,7 +19,7 @@
             font-size: 24px;
         }
         h1{
-            font-size: 56px;
+            font-size: 40px;
         }
         p{
             text-transform: lowercase;
@@ -29,4 +29,55 @@
             line-height: 160%;
         }
     }
+    .cards{
+        display: flex;
+        flex-direction:row;
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 2vw;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .TheBest{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        // padding-right: 8vw;
+        // padding-left: 8vw;
+        padding-top: 10vh;
+        padding-bottom: 6vh;
+        gap: 4vh;
+        overflow: hidden;
+        .title{
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            gap: 0.2vh;
+            h2{
+                font-size: 24px;
+            }
+            h1{
+                font-size: 36px;
+            }
+            p{
+                text-transform: lowercase;
+                color: #13465B;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+            }
+        }
+        .cards{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+    }
+    
+    
 }

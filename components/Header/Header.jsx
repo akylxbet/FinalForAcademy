@@ -1,34 +1,39 @@
 import React from "react";
 import s from "./Header.module.scss";
+import AnimatedButton from "../UI/AnimatedButton/AnimatedButton";
+import Link from "next/link";
 const Header = () => {
   return (
     <div className={s.Header}>
       <div className={s.logo}>
-        <img src="/logo.png" alt="img" />
-        <h1>BozuyKG</h1>
+        <img src="/bozuy.png" alt="img" />
+        
       </div>
       <nav className={s.navigation}>
         <ul>
           <li>
-            <a href="#">Проекты</a>
+            <Link href="/catalog">Проекты</Link>
           </li>
           <li>
-            <a href="#">Районы</a>
+            <Link href="/rayons">Районы</Link>
           </li>
           <li>
-            <a href="#">Блог</a>
+            <Link href="#">Блог</Link>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <Link href="#">Контакты</Link>
           </li>
         </ul>
       </nav>
-        <div className={s.lang}>
-            <button>eng</button>
-        </div> 
-        <div className={s.auth}>
-            <button>Регистрация</button>
-        </div>
+
+      <button className={s.myButt}>eng</button>
+      <AnimatedButton
+        background="#ffc95e"
+        hoverBackground="#FFFF"
+        type="primary"
+      >
+        Регистрация
+      </AnimatedButton>
     </div>
   );
 };
