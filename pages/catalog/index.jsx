@@ -1,45 +1,27 @@
 import React, { useState, useEffect } from "react";
 import s from "./Catalog.module.scss";
 import FilterOfCatalog from "@/components/FilterOfCatalog/FilterOfCatalog";
+// import ProductCard from "@/components/ProductCard/ProductCard";
 import { Button, Dropdown, Modal, Select } from "antd";
 // import { products } from "@/contants/Products";
 import { useDispatch, useSelector } from "react-redux";
 import CardBlockCard from "@/components/CardBlockCard/CardBlockCard";
-import axios from "axios";
 
 const Catalog = () => {
-  useEffect(() => {
-   
-     const akyl = async () => {
-      await axios
-        .get("http://localhost:4000/beleks")
-        .then((res) => {
-          console.log(res);
-          setData(res.data);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    };
-
-    akyl()
-  }, []);
-
-  const [data, setData] = useState([]);
-
-  console.log(data);
-
   const dispatch = useDispatch();
-  const { setDatt } = useSelector((state) => state.products);
-  const [filteredProducts, setFilteredProducts] = useState([data]);
+  const { products } = useSelector((state) => state.products);
+
+  console.log(products);
+  const [filteredProducts, setFilteredProducts] = useState([products]);
   const [priceRange, setPriceRange] = useState([0, 300990]);
   const [open, setOpen] = useState(false);
   const [sortOrder, setSortOrder] = useState("default");
 
   const handlePriceChange = (value) => {
-    const filtered = data.filter(
-      (data) =>
-        parseInt(data.price) >= value[0] && parseInt(data.price) <= value[1]
+    const filtered = products.filter(
+      (product) =>
+        parseInt(product.price) >= value[0] &&
+        parseInt(product.price) <= value[1]
     );
 
     // Сортировка отфильтрованных продуктов
@@ -48,8 +30,8 @@ const Catalog = () => {
     setPriceRange(value);
   };
 
-  const sortProducts = (data, sortOrder) => {
-    const sorted = [...data];
+  const sortProducts = (products, sortOrder) => {
+    const sorted = [...products];
 
     if (sortOrder === "asc") {
       sorted.sort((a, b) => parseInt(a.price) - parseInt(b.price));
@@ -61,7 +43,7 @@ const Catalog = () => {
 
   const handleSortChange = (value) => {
     if (value === "all") {
-      setFilteredProducts(data); // Show all products
+      setFilteredProducts(products); // Show all products
     } else if (value === "desc") {
       const sortedProducts = sortProducts(filteredProducts, "desc");
       setFilteredProducts(sortedProducts); // Sort by descending price
@@ -72,20 +54,20 @@ const Catalog = () => {
   };
 
   useEffect(() => {
-    const prices = data.map((product) => parseInt(product.price));
+    const prices = products.map((product) => parseInt(product.price));
     const maxPrice = Math.max(...prices);
 
     setPriceRange([0, maxPrice]);
     handlePriceChange([0, maxPrice]);
-  }, [data]);
+  }, [products]);
 
-  const maxPrice = data.reduce((max, product) => {
-    const price = data.price;
+  const maxPrice = products.reduce((max, product) => {
+    const price = product.price;
     return price > max ? price : max;
   }, 0);
 
   const formatPrice = (price) => {
-    return `${price.toLocaleString()}$`;
+    return `${price.toLocaleString()}₽`;
   };
 
   const items = [
@@ -102,6 +84,16 @@ const Catalog = () => {
       label: <p>по популярности</p>,
     },
   ];
+
+  // const handleSortChange = (value) => {
+  //   setSortOrder(value);
+
+  //   // Сортировка отфильтрованных продуктов при изменении значения сортировки
+  //   const sortedProducts = sortProducts(filteredProducts, value);
+  //   setFilteredProducts(sortedProducts);
+  // };
+
+  console.log(filteredProducts);
 
   return (
     <section className={s.Catalog}>
@@ -173,21 +165,22 @@ const Catalog = () => {
               <h1>Не найдено товаров по данной цене!</h1>
             </div>
           ) : (
-            filteredProducts.map((data) => (
+            filteredProducts.map((product) => (
               <CardBlockCard
-                id={data.id}
-                img={data.img}
-                name={data.name}
-                price={data.price}
-                term={data.term}
-                dom={data.dom}
-                domtitle={data.domtitle}
-                kvadrat={data.kvadrat}
-                kvadrattitle={data.kvadrattitle}
-                group={data.group}
-                grouptitle={data.grouptitle}
-                map={data.map}
-                maptitle={data.maptitle}
+                product={product}
+                key={product.id}
+                img={product.img}
+                name={product.name}
+                price={product.price}
+                term={product.term}
+                dom={product.dom}
+                domtitle={product.domtitle}
+                kvadrat={product.kvadrat}
+                kvadrattitle={product.kvadrattitle}
+                group={product.group}
+                grouptitle={product.grouptitle}
+                map={product.map}
+                maptitle={product.maptitle}
               />
             ))
           )}

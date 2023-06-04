@@ -1,11 +1,10 @@
 .Catalog {
   margin: 0 auto;
-  max-width: 1350px;
+  max-width: 1920px;
   height: auto;
-  padding: 30px 5vw 10vh 5vw;
+  padding: 30px 5vw 0 5vw;
   display: flex;
   flex-direction: row;
-  overflow-y: hidden;
   .left_side {
     width: 24vw;
     z-index: 2;
@@ -15,6 +14,7 @@
     display: flex;
     width: 76vw;
     flex-direction: column;
+    
     .sorting {
       width: 100%;
       display: flex;
@@ -28,6 +28,7 @@
       .right_side_of_sort {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
         align-items: center;
       }
@@ -35,11 +36,12 @@
     .Cards {
       width: 100%;
       display: flex;
+      justify-content: center;
       flex-direction: row;
-      column-gap: 1vw;
-      gap: 1vw;
-      justify-content: space-around;
       flex-wrap: wrap;
+      gap: 7vw;
+      height: auto
+      ;
       .noProducts {
         padding-top: 28vh;
         margin: 0 auto;
