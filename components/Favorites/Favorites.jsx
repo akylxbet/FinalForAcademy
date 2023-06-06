@@ -1,10 +1,10 @@
 import f from './Favorites.module.scss'
 import Links from "@/components/Links/Links";
-import ProductCard from "@/components/ProductCard/ProductCard";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {getFavorites} from "@/redux/reducers/favorites";
 import {Spinner} from "@chakra-ui/react";
+import CardBlockCard from '../CardBlockCard/CardBlockCard';
 
 
 const Favorites = () => {
@@ -49,7 +49,22 @@ const Favorites = () => {
                     {
                         favorites.length !== 0 ?
                             favorites.map(item => (
-                                <ProductCard key={item.id} setState={setState} product={item}/>
+                                <CardBlockCard
+                                product={product}
+                                key={product.id}
+                                img={product.img}
+                                name={product.name}
+                                price={product.price}
+                                term={product.term}
+                                dom={product.dom}
+                                domtitle={product.domtitle}
+                                kvadrat={product.kvadrat}
+                                kvadrattitle={product.kvadrattitle}
+                                group={product.group}
+                                grouptitle={product.grouptitle}
+                                map={product.map}
+                                maptitle={product.maptitle}
+                              />
                             )) : <h1 className="not">Нет товаров в избранное</h1>
                     }
                 </div>

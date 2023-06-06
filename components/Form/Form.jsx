@@ -7,7 +7,7 @@ import {useDispatch} from "react-redux";
 import axios from "axios";
 import {useToast} from "@chakra-ui/react";
 import {useForm} from "react-hook-form";
-
+import { motion } from "framer-motion";
 const Form = () => {
     const toast = useToast()
     const {pathname} = useRouter()
@@ -24,7 +24,7 @@ const Form = () => {
 
     // register ---------------------------------------------------
     const regUser = (data) => {
-        axios.post('http://localhost:4080/register', {...data})
+        axios.post('http://localhost:4000/users', {...data})
             .then((res) => {
                 toast({
                     title: 'Акканут создан',
@@ -57,7 +57,7 @@ const Form = () => {
 
     // login ----------------------------------------------------
     const logUser = (data) => {
-        axios.post('http://localhost:4080/login', {...data})
+        axios.post('http://localhost:4000/login', {...data})
             .then((res) => {
                 toast({
                     title: 'Вы вошли в аккаунт',
@@ -87,7 +87,11 @@ const Form = () => {
     }
 
     return(
-        <form noValidate onSubmit={handleSubmit(submit)}>
+        <motion.form 
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.4 }}
+        noValidate onSubmit={handleSubmit(submit)}>
             {
                 pathname === '/register' ? <h1>Регистрация</h1> : <h1>Войти</h1>
             }
@@ -182,7 +186,7 @@ const Form = () => {
                         </>
                 }
             </div>
-        </form>
+        </motion.form>
     )
 }
 

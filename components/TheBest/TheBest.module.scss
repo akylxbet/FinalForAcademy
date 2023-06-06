@@ -30,9 +30,10 @@
         }
     }
     .cards{
+        align-items: start;
         display: flex;
         flex-direction:row;
-        width: 90%;
+        width: 95%;
         flex-wrap: wrap;
         gap: 2vw;
         justify-content: center;

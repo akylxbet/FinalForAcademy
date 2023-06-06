@@ -1,14 +1,10 @@
-import h from './Header.module.scss'
-import { BiSearch } from "react-icons/bi";
-import { HiOutlinePhone } from "react-icons/hi";
-import { TbTruckDelivery } from "react-icons/tb";
 import { FiHeart } from "react-icons/fi";
 import { BsBag } from "react-icons/bs";
 import { FiUser } from "react-icons/fi";
 import Link from "next/link";
 import Burger from "@/components/Header/Burger/Burger";
 import {useDispatch, useSelector} from "react-redux";
-
+import h from './Header.module.scss'
 import {
     Popover,
     PopoverTrigger,
@@ -68,11 +64,11 @@ const Header = () => {
                         <img src="/bozuy.png" alt="" />
                     </Link>
 
-                    {/* <ul className={h.header__list}>
+                    <ul className={h.header__list}>
                         <Link href="/" className={h.header__list_item}>Главная</Link>
-                        <li className={h.header__list_item}>О нас</li>
-                        <li className={h.header__list_item}>Контакты</li>
-                    </ul> */}
+                        <Link href="/catalog" className={h.header__list_item}>О нас</Link>
+                        <Link href="/disctrict" className={h.header__list_item}>Наши районы</Link>
+                    </ul>
 
                     {/* <label className={h.header__label}>
                         <span className={h.header__label_icon}>

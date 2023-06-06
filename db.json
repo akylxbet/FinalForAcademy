@@ -187,7 +187,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters"
     }
-  ], 
+  ],
   "users": [
     {
       "email": "joni.pacan@list.ru",
@@ -244,10 +244,44 @@
       "id": 10
     },
     {
-      "email": "demilbekov.acoolbek14@gmail.com",
-      "password": "$2a$10$oM/2s0CswcXqO3hvYx7oTuCcSr821NAKddybV5A.fDC67m/eCDIFa",
       "name": "akylxbet",
+      "email": "akylbekich@gmail.com",
+      "password": "509551719Aa",
       "id": 11
+    }
+  ],
+  "dicstrict": [
+    {
+      "name": "Downtown",
+      "id": 1
+    },
+    {
+      "name": "Dubai Marina",
+      "id": 2
+    },
+    {
+      "name": "Palm Jumeirah",
+      "id": 3
+    },
+    {
+      "name": "MBR CITY Meydan",
+      "id": 4
+    },
+    {
+      "name": "Creek Harbour",
+      "id": 5
+    },
+    {
+      "name": "Business Bay",
+      "id": 6
+    },
+    {
+      "name": "DUBAI Hills Estate",
+      "id": 7
+    },
+    {
+      "name": "DUBAI Hills Estate",
+      "id": 8
     }
   ]
 }

@@ -1,0 +1,24 @@
+.Disctrict {
+  height: 100vh;
+  max-width: 1920px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5vh 2vw 5vh 2vw;
+  .title{
+    h1{
+        font-size: 48px;
+        padding-left: 2vw;
+    }
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+    .card {
+      width: 460px;
+      height: 420px;
+    }
+  }
+}
