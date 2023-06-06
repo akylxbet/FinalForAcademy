@@ -21,7 +21,7 @@ const Form = () => {
         const {confirm, ...other} = data
         pathname === '/register' ? regUser(other) : logUser(other)
     }
-
+    
     // register ---------------------------------------------------
     const regUser = (data) => {
         axios.post('http://localhost:4000/users', {...data})

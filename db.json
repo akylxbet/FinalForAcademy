@@ -50,7 +50,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Downtown"
     },
     {
       "id": 2,
@@ -65,7 +66,9 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Downtown",
+      "type":""
     },
     {
       "id": 3,
@@ -80,7 +83,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Downtown"
     },
     {
       "id": 4,
@@ -95,7 +99,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Creek Harbour"
     },
     {
       "id": 5,
@@ -110,7 +115,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "JUMEIRAH VILLAGE CIRCLE"
     },
     {
       "id": 6,
@@ -125,7 +131,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "DUBAI Hills Estate"
     },
     {
       "id": 7,
@@ -140,7 +147,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "MBR CITY Meydan"
     },
     {
       "id": 8,
@@ -155,7 +163,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Palm Jumeirah"
     },
     {
       "id": 9,
@@ -170,7 +179,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Dubai Marina"
     },
     {
       "id": 10,
@@ -185,7 +195,8 @@
       "group": "/group.svg",
       "grouptitle": "Select Group",
       "map": "/map.svg",
-      "maptitle": "Bluewaters"
+      "maptitle": "Bluewaters",
+      "district": "Dubai Marina"
     }
   ],
   "users": [
@@ -248,6 +259,24 @@
       "email": "akylbekich@gmail.com",
       "password": "509551719Aa",
       "id": 11
+    },
+    {
+      "name": "аку",
+      "email": "aky@gmail.com",
+      "password": "559551719aA",
+      "id": 12
+    },
+    {
+      "name": "baitur",
+      "email": "baitur@gmail.com",
+      "password": "Baitur06",
+      "id": 13
+    },
+    {
+      "name": "belek",
+      "email": "belek@gmail.com",
+      "password": "12345Aa",
+      "id": 14
     }
   ],
   "dicstrict": [

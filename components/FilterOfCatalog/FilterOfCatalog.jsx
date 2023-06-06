@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Slider, Checkbox } from "antd";
+import { Slider, Checkbox, Select } from "antd";
 import s from "./FilterOfCatalog.module.scss";
 import Selection from "../UI/Selection/Selection";
 import Checkboxes from "../Checkbox/Checkboxes";
 // import ColorBlocks from "../ColorBlocks/ColorBlocks";
-import axios from 'axios'
+import axios from "axios";
 const FilterOfCatalog = ({
   priceRange,
   setPriceRange,
@@ -12,14 +12,65 @@ const FilterOfCatalog = ({
   maxPrice,
   formatPrice,
 }) => {
+
+
+  const items = [
+    {
+      key: "1",
+      label: <p>ВЖХ</p>,
+    },
+    {
+      key: "2",
+      label: <p>Семейный</p>,
+    },
+    {
+      key: "3",
+      label: <p>Инвестиции</p>,
+    },
+    {
+      key:'4',
+      label: <p>Виллы</p>
+    },
+    {
+      key:'5',
+      label: <p>Море</p>
+    }
+  ];
+
   return (
     <div className={s.FilterOfCatalog}>
       <div className={s.Select}>
         <h3>Раздел</h3>
-        
-        <Selection>Гостинные</Selection>
-        <Selection>Мягкая мебель</Selection>
-        <Selection>Диваны</Selection>
+        <Select
+          placeholder="Сортировать"
+          menu={{
+            items,
+          }}
+          defaultValue="Смотреть"
+          options={[
+            {
+              value: "ВЖХ",
+              label: "Для получения ВНЖ",
+            },
+            {
+              value: "Семейный",
+              label: "Семейные комплексы",
+            },
+            {
+              value: "Инвестиции",
+              label: "Проекты для инвестирования",
+            },
+            {
+              value: "Виллы",
+              label: "Виллы и таунхаусы",
+            },
+            {
+              value: "Море",
+              label: "Проекты у моря",
+            },
+          ]}
+          placement="bottomRight"
+        />
       </div>
 
       <div className={s.price}>

@@ -12,8 +12,8 @@ const Selection = ({ children }) => {
         allowClear
         options={[
           {
-            value: "Гостинные",
-            label: "Lucy",
+            value: "ВЖХ",
+            label: "ВЖХ",
           },
         ]}
       />
