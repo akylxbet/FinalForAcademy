@@ -12,6 +12,12 @@ const Catalog = () => {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
 
+  const [selectedFilter, setSelectedFilter] = useState("all");
+  const handleFilterChange = (value) => {
+    setSelectedFilter(value);
+  };
+
+
   console.log(products);
   const [filteredProducts, setFilteredProducts] = useState([products]);
   const [priceRange, setPriceRange] = useState([0, 300990]);
@@ -105,6 +111,8 @@ const Catalog = () => {
           maxPrice={maxPrice}
           setPriceRange={setPriceRange}
           formatPrice={formatPrice}
+          selectedFilter={selectedFilter}
+          handleFilterChange={handleFilterChange}
         />
       </div>
       <div className={s.right_side}>
@@ -166,27 +174,32 @@ const Catalog = () => {
               <h1>Не найдено товаров по данной цене!</h1>
             </div>
           ) : (
-            filteredProducts.map((product) => (
-              <Link href='/details'>
-                 <CardBlockCard
-                product={product}
-                key={product.id}
-                img={product.img}
-                name={product.name}
-                price={product.price}
-                term={product.term}
-                dom={product.dom}
-                type={product.type}
-                kvadrat={product.kvadrat}
-                kvadrattitle={product.kvadrattitle}
-                group={product.group}
-                grouptitle={product.grouptitle}
-                map={product.map}
-                maptitle={product.maptitle}
-              />
-              </Link>
-           
-            ))
+            filteredProducts
+              .filter((product) => {
+                if (selectedFilter === "all") {
+                  return true; // Отображать все карточки
+                } else {
+                  return product.type === selectedFilter; // Отображать карточки только с выбранным типом
+                }
+              })
+              .map((product) => (
+                <CardBlockCard
+                  product={product}
+                  key={product.id}
+                  img={product.img}
+                  name={product.name}
+                  price={product.price}
+                  term={product.term}
+                  dom={product.dom}
+                  type={product.type}
+                  kvadrat={product.kvadrat}
+                  kvadrattitle={product.kvadrattitle}
+                  group={product.group}
+                  grouptitle={product.grouptitle}
+                  map={product.map}
+                  maptitle={product.maptitle}
+                />
+              ))
           )}
         </div>
       </div>

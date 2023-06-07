@@ -69,26 +69,6 @@ const Header = () => {
                         <Link href="/catalog" className={h.header__list_item}>О нас</Link>
                         <Link href="/disctrict" className={h.header__list_item}>Наши районы</Link>
                     </ul>
-
-                    {/* <label className={h.header__label}>
-                        <span className={h.header__label_icon}>
-                            <BiSearch size={20} />
-                        </span>
-                        <input type="text" className={h.header__label_input} placeholder="Поиск" />
-                    </label> */}
-                    {/* <ul className={h.header__info}>
-                        <li className={h.header__info_item}>
-                            <HiOutlinePhone size={20} />
-                            8 (964) 89 99 119
-                        </li>
-
-                        <li className={h.header__info_item}>
-                            <TbTruckDelivery size={20} />
-
-                            8 (964) 89 99 119
-                        </li>
-                    </ul> */}
-
                     <div className={h.header__icons}>
                         <div className={h.header__icons_notify}  onClick={user? () => router.push('/favorites'): onOpen } >
                             <NoAcc func={func}/>

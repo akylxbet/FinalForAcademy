@@ -36,11 +36,12 @@ const Form = () => {
 
                 localStorage.setItem('user', JSON.stringify({
                     token: res.data.accessToken,
-                    ...res.data.user
+                    ...res.data.name
                 }))
-
+                console.log(res);
                 reset()
-                router.push('/')
+                // router.push('/')
+
                 dispatch(increment(res.data.user))
 
 
@@ -71,13 +72,13 @@ const Form = () => {
                     token: res.data.accessToken,
                     ...res.data.user
                 }))
-
+                console.log(res);
                 dispatch(increment(res.data.user))
                 reset()
                 router.push('/')
             }).catch((err) => {
             toast({
-                title: "Не правильно введен логин или пароль",
+                title: "Даун введи нормально блять",
                 status: 'error',
                 duration: 3000,
                 isClosable: true,

@@ -153,8 +153,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "MBR CITY Meydan"
-      ,"type":"Виллы"
+      "district": "MBR CITY Meydan",
+      "type": "Виллы"
     },
     {
       "id": 8,
@@ -171,7 +171,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters",
       "district": "Palm Jumeirah",
-      "type":"Семейный"
+      "type": "Семейный"
     },
     {
       "id": 9,
@@ -188,7 +188,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters",
       "district": "Dubai Marina",
-      "type":"Виллы"
+      "type": "Виллы"
     },
     {
       "id": 10,
@@ -205,7 +205,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters",
       "district": "Dubai Marina",
-      "type":"ВЖХ"
+      "type": "ВЖХ"
     }
   ],
   "users": [
@@ -234,58 +234,10 @@
       "id": 5
     },
     {
-      "email": "baitur@gmail.com",
-      "password": "$2a$10$/vzZMN/8IKuv59CmvMCZUuEJwuIlyWQx/HMibGxJg4xyGwMOrHVA6",
-      "name": "baitur",
+      "email": "demolbek@gmail.com",
+      "password": "$2a$10$gaN5cv2zfk029AIwrXmEL.B4NT7MtHUgXKdu97B7EzZe6vBLme9Vu",
+      "name": "Акылбек",
       "id": 6
-    },
-    {
-      "email": "baitur2@gmail.com",
-      "password": "$2a$10$bRjZzkDsoM7H2fGU47X0a.B.029jakf7F6po12/mKIPO1ZE1P4ppC",
-      "name": "baitur1",
-      "id": 7
-    },
-    {
-      "email": "baitur02@gmail.com",
-      "password": "$2a$10$kAT0BkYe9o0OyoVDq28TEexWdJPzZyPG2/5U2zMTsKC/Lxrmv9X26",
-      "name": "baitur02",
-      "id": 8
-    },
-    {
-      "email": "baitur3@gmail.com",
-      "password": "$2a$10$uiWwOvvWRcXon5a38KjYeuXFJkT7Bm8UdlAhu50k1juGldAl78kC.",
-      "name": "baitur3",
-      "id": 9
-    },
-    {
-      "email": "aziz@gmail.com",
-      "password": "$2a$10$sfI5rHp.SFHavxbrCAUA5OQu0NiTMIncxs0Cnw4i3kERE9mpHoXf.",
-      "name": "aziz",
-      "id": 10
-    },
-    {
-      "name": "akylxbet",
-      "email": "akylbekich@gmail.com",
-      "password": "509551719Aa",
-      "id": 11
-    },
-    {
-      "name": "аку",
-      "email": "aky@gmail.com",
-      "password": "559551719aA",
-      "id": 12
-    },
-    {
-      "name": "baitur",
-      "email": "baitur@gmail.com",
-      "password": "Baitur06",
-      "id": 13
-    },
-    {
-      "name": "belek",
-      "email": "belek@gmail.com",
-      "password": "12345Aa",
-      "id": 14
     }
   ],
   "dicstrict": [

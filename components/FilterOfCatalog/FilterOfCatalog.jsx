@@ -11,30 +11,57 @@ const FilterOfCatalog = ({
   handlePriceChange,
   maxPrice,
   formatPrice,
+  selectedFilter, handleFilterChange
 }) => {
+  
+  // const items = [
+  //   {
+  //     key: "1",
+  //     label: <p>ВЖХ</p>,
+  //   },
+  //   {
+  //     key: "2",
+  //     label: <p>Семейный</p>,
+  //   },
+  //   {
+  //     key: "3",
+  //     label: <p>Инвестиции</p>,
+  //   },
+  //   {
+  //     key:'4',
+  //     label: <p>Виллы</p>
+  //   },
+  //   {
+  //     key:'5',
+  //     label: <p>Море</p>
+  //   }
+  // ];
 
-
-  const items = [
+  const filterOptions = [
     {
-      key: "1",
-      label: <p>ВЖХ</p>,
+      value: "all",
+      label: "Все",
     },
     {
-      key: "2",
-      label: <p>Семейный</p>,
+      value: "ВЖХ",
+      label: "Для получения ВНЖ",
     },
     {
-      key: "3",
-      label: <p>Инвестиции</p>,
+      value: "Семейный",
+      label: "Семейные комплексы",
     },
     {
-      key:'4',
-      label: <p>Виллы</p>
+      value: "Инвестиции",
+      label: "Проекты для инвестирования",
     },
     {
-      key:'5',
-      label: <p>Море</p>
-    }
+      value: "Виллы",
+      label: "Виллы и таунхаусы",
+    },
+    {
+      value: "Море",
+      label: "Проекты у моря",
+    },
   ];
 
   return (
@@ -43,33 +70,38 @@ const FilterOfCatalog = ({
         <h3>Раздел</h3>
         <Select
           placeholder="Сортировать"
-          menu={{
-            items,
-          }}
-          defaultValue="Смотреть"
-          options={[
-            {
-              value: "ВЖХ",
-              label: "Для получения ВНЖ",
-            },
-            {
-              value: "Семейный",
-              label: "Семейные комплексы",
-            },
-            {
-              value: "Инвестиции",
-              label: "Проекты для инвестирования",
-            },
-            {
-              value: "Виллы",
-              label: "Виллы и таунхаусы",
-            },
-            {
-              value: "Море",
-              label: "Проекты у моря",
-            },
-          ]}
+          options={filterOptions}
+          value={selectedFilter}
+          onChange={handleFilterChange}
           placement="bottomRight"
+          // placeholder="Сортировать"
+          // menu={{
+          //   items,
+          // }}
+          // defaultValue="Смотреть"
+          // options={[
+          //   {
+          //     value: "ВЖХ",
+          //     label: "Для получения ВНЖ",
+          //   },
+          //   {
+          //     value: "Семейный",
+          //     label: "Семейные комплексы",
+          //   },
+          //   {
+          //     value: "Инвестиции",
+          //     label: "Проекты для инвестирования",
+          //   },
+          //   {
+          //     value: "Виллы",
+          //     label: "Виллы и таунхаусы",
+          //   },
+          //   {
+          //     value: "Море",
+          //     label: "Проекты у моря",
+          //   },
+          // ]}
+          // placement="bottomRight"
         />
       </div>
 
