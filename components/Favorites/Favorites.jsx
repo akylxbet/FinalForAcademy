@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import {getFavorites} from "@/redux/reducers/favorites";
 import {Spinner} from "@chakra-ui/react";
 import CardBlockCard from '../CardBlockCard/CardBlockCard';
+import products from '@/redux/reducers/products';
 
 
 const Favorites = () => {
@@ -18,6 +19,8 @@ const Favorites = () => {
     const dispatch = useDispatch()
 
     const {favorites, loading, error } = useSelector(state => state.favorites)
+    
+    const {products} = useSelector(state=> state.products)
 
     useEffect(() => {
         dispatch(getFavorites(item?.id))
@@ -48,7 +51,7 @@ const Favorites = () => {
                     }
                     {
                         favorites.length !== 0 ?
-                            favorites.map(item => (
+                            products.map(item => (
                                 <CardBlockCard
                                 product={product}
                                 key={product.id}

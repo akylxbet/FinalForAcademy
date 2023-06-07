@@ -66,8 +66,9 @@ const Header = () => {
 
                     <ul className={h.header__list}>
                         <Link href="/" className={h.header__list_item}>Главная</Link>
-                        <Link href="/catalog" className={h.header__list_item}>О нас</Link>
+                        <Link href="/abouUs" className={h.header__list_item}>О нас</Link>
                         <Link href="/disctrict" className={h.header__list_item}>Наши районы</Link>
+                        <Link href="/catalog" className={h.header__list_item}>Наши проекты</Link>
                     </ul>
                     <div className={h.header__icons}>
                         <div className={h.header__icons_notify}  onClick={user? () => router.push('/favorites'): onOpen } >

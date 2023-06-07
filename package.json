@@ -30,6 +30,7 @@
     "react-scripts": "^5.0.1",
     "sass": "^1.62.1",
     "swiper": "^9.3.2",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "yet-another-react-lightbox": "^3.10.2"
   }
 }

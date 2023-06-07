@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import s from './Footer.module.scss'
+import Links from "../Links/Links";
 const Footer = () => {
   return (
     <footer className={s.footer}>
@@ -17,6 +18,10 @@ const Footer = () => {
             Районы
         </Link>
         <Link href="/register">
+            Хотите Зарегистрироваться?
+        </Link>
+        <Link href="/abouUs">
+            Подробнее о нас!
         </Link>
       </div>
     </footer>

@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.home {
+  width: 100%;
+  background-size: cover;
+  background-color: rgba(40, 40, 40, 0.5);
+  position: relative;
+  margin-top: 75px;
+
+  .home_bc {
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding-top: 275px;
+    padding-left: 85px;
+    .hr_home {
+      overflow: hidden;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-family: "Bahnschrift", sans-serif;
+      src: local("Bahnschrift"),
+        url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
+      font-style: normal;
+      font-weight: 500;
+      line-height: 145px;
+      color: #f4f3e3;
+    }
+    .intro_title {
+      height: 85px;
+      h2 {
+        font-size: 70px;
+      }
+    }
+    .intro_last_title {
+      margin-top: 20px;
+    }
+    h1 {
+      font-family: "Bahnschrift", sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 100px;
+      line-height: 122px;
+      color: #f4f3e3;
+    }
+    hr {
+      width: 439px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid rgb(191 161 6);
+      border-radius: 20px;
+      margin-left: 15px;
+      animation: 1s anim-lightspeed-in ease forwards;
+    }
+    .text_home {
+      font-family: "Bahnschrift", sans-serif !important;
+      margin-top: 20px;
+      width: 460px;
+      margin-left: 20px;
+      @media (width <= 442px) {
+        display: none;
+      }
+    }
+    p:first-child {
+      margin-right: 5px !important;
+    }
+    p {
+      width: 14px;
+      font-family: "Bahnschrift", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #f4f3e3;
+    }
+    @keyframes anim-lightspeed-in {
+      0% {
+        transform: translateX(-200%);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  .button_focus_fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    animation-name: ring;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 1000px;
+    z-index: 3;
+    width: 250px;
+  }
+
+  .button_focus {
+    width: 250px;
+    height: 60px;
+    background: rgb(191 161 6);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 20px rgb(191 161 6);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    opacity: 0.9;
+
+    a {
+      letter-spacing: 1.3px;
+      text-decoration: none;
+      font-family: "Bahnschrift", sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  .button_focus:hover {
+    opacity: 1;
+    background-color: #d4b933;
+  }
+
+}
+@keyframes ring {
+  0% {
+    box-shadow: 0px 0px 20px rgb(191 161 6);
+  }
+  100% {
+    box-shadow: 0px 0px 50px #d4b933;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1050px) {
+  .home {
+    height: auto;
+  }
+
+  .home_bc {
+    padding: 100px 20px 0 20px !important;
+    .text_home {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1440px) {
+  .home {
+    height: auto;
+  }
+  .home_bc {
+    padding: 180px 20px 0 20px !important;
+    h2 {
+      font-size: 52px !important;
+    }
+    h1 {
+      font-size: 100px !important;
+    }
+
+    .text_home {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 704px) and (max-width: 900px) {
+  .home {
+    height: auto;
+  }
+  .home_bc {
+    padding: 110px 20px 0 20px !important;
+    h2 {
+      font-size: 62.5px !important;
+      line-height: 80px !important;
+    }
+    h1 {
+      font-size: 100px !important;
+      line-height: 80px !important;
+    }
+    .text_home {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 703px) {
+  .home {
+    height: auto;
+  }
+  .home_bc {
+    padding: 90px 20px 0 20px !important;
+    .intro_last_title {
+      margin-top: 0 !important;
+    }
+    hr {
+      margin-bottom: 0 !important;
+      margin-left: 0 !important;
+    }
+    h2 {
+      font-size: 62.5px !important;
+      line-height: 65px !important;
+    }
+    h1 {
+      font-size: 100px !important;
+      line-height: 65px !important;
+      padding-top: 20px;
+    }
+    .text_home {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 639px) {
+  .home {
+    .home_bc {
+      h2 {
+        font-size: 37.25px !important;
+        line-height: 40px !important;
+      }
+      h1 {
+        font-size: 60px !important;
+        line-height: 40px !important;
+        padding-top: 40px;
+      }
+      .text_home {
+        p {
+          font-size: 15px !important;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+  .intro_title {
+    height: 30px !important;
+  }
+}
+
+@media screen and (min-width: 461px) and (max-width: 600px) {
+  .text_home {
+    display: none;
+  }
+  .intro_title {
+    height: 30px !important;
+  }
+  .home_bc {
+    padding: 90px 20px 0 20px !important;
+
+    h2 {
+      font-size: 37.25px !important;
+      line-height: 40px !important;
+    }
+    h1 {
+      font-size: 60px !important;
+      line-height: 40px !important;
+      padding-top: 40px;
+    }
+  }
+
+}
+
+// @media screen and (max-width: 478px) {
+//   .home {
+//     height: auto;
+//   }
+//   .intro_title{
+//     h2 {
+//       font-size: 20px !important;
+//       line-height: 40px !important;
+//     }
+//   }
+
+//   .home_bc {
+//     padding: 70px 20px 0 20px !important;
+
+//     h2 {
+//       font-size: 20px !important;
+//       line-height: 40px !important;
+//     }
+//     .text_home {
+//       display: none;
+//     }
+//   }
+//   .button_focus_fixed {
+//     bottom: 30px;
+//     left: 18%;
+//   }
+// }
+
+
+@media screen and (min-width: 360px) and (max-width: 460px) {
+  .button_focus_fixed {
+    right: 10px !important;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 460px) {
+  .intro_title {
+    height: 50px !important;
+    h2 {
+      font-size: 35px !important;
+    }
+    h1 {
+      font-size: 35px !important;
+    }
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 460px) {
+  .home {
+    height: auto;
+  }
+  .intro_title {
+    height: 50px !important;
+  }
+
+  .text_home{
+    display: none;
+  }
+
+  .home_bc {
+    padding: 90px 20px 0 20px !important;
+
+    h2 {
+      font-size: 25px !important;
+      line-height: 55px !important;
+    }
+    h1 {
+      font-size: 35px !important;
+      padding-top: 0 !important;
+      line-height: 40px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+  .home {
+    height: auto;
+  }
+  .intro_title {
+    height: 40px !important;
+    h2 {
+      font-size: 31.25px !important;
+      line-height: 40px !important;
+    }
+  }
+
+  .home_bc {
+    padding: 70px 20px 0 20px !important;
+
+    h1 {
+      font-size: 40px !important;
+      line-height: 40px !important;
+    }
+  }
+}

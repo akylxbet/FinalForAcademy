@@ -1,6 +1,7 @@
 .header{
     padding: 56px 0 45px;
-    
+    background: transparent;
+    border-bottom: 1.5px solid orange;
     &__nav{
       display: flex;
       align-items: center;
@@ -138,12 +139,16 @@
     }
   }
   
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 700px) {
     .header__label:nth-child(4){
       display: none;
     }
     .header__nav{
       justify-content: space-between;
+      
+    }
+    .header__title{ 
+      display: none;
     }
     .header__icons{
       column-gap: 20px;

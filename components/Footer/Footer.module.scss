@@ -7,9 +7,17 @@
     flex-direction: row; 
     justify-content: space-around;
     position: static;
+    
     .social{
         display: flex;
         flex-direction: row;
         gap: 3vw;
+        img{
+            color: rgb(169, 146, 19);
+        }
+    }
+    .blocks{
+        display: flex;
+        flex-direction: column;
     }
 }
