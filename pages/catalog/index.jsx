@@ -6,6 +6,7 @@ import { Button, Dropdown, Modal, Select } from "antd";
 // import { products } from "@/contants/Products";
 import { useDispatch, useSelector } from "react-redux";
 import CardBlockCard from "@/components/CardBlockCard/CardBlockCard";
+import Link from "next/link";
 
 const Catalog = () => {
   const dispatch = useDispatch();
@@ -166,7 +167,8 @@ const Catalog = () => {
             </div>
           ) : (
             filteredProducts.map((product) => (
-              <CardBlockCard
+              <Link href='/details'>
+                 <CardBlockCard
                 product={product}
                 key={product.id}
                 img={product.img}
@@ -182,6 +184,8 @@ const Catalog = () => {
                 map={product.map}
                 maptitle={product.maptitle}
               />
+              </Link>
+           
             ))
           )}
         </div>
