@@ -36,7 +36,7 @@ const Disctrict = () => {
       {data.map((item) => {
         return (
           <div className={s.card}>
-            <AnimCard id={item.id} name={item.name} />
+            <AnimCard id={item.id} name={item.name} img={item.img}/>
           </div>
         );
       })}

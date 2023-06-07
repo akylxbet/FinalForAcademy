@@ -51,7 +51,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "Downtown"
+      "district": "Downtown",
+      "type":""
     },
     {
       "id": 2,
@@ -282,35 +283,43 @@
   "dicstrict": [
     {
       "name": "Downtown",
-      "id": 1
+      "id": 1,
+      "img":"/downtown.png"
     },
     {
       "name": "Dubai Marina",
-      "id": 2
+      "id": 2,
+      "img":"/marina.png"
     },
     {
       "name": "Palm Jumeirah",
-      "id": 3
+      "id": 3,
+      "img":"/Palm.png"
     },
     {
       "name": "MBR CITY Meydan",
-      "id": 4
+      "id": 4,
+      "img":"/Meydan.png"
     },
     {
       "name": "Creek Harbour",
-      "id": 5
+      "id": 5,
+      "img":"/GreekHarbor.png"
     },
     {
       "name": "Business Bay",
-      "id": 6
+      "id": 6,
+      "img":"/Bussines.png"
     },
     {
       "name": "DUBAI Hills Estate",
-      "id": 7
+      "id": 7,
+      "img":"/DubaiHills.png"
     },
     {
-      "name": "DUBAI Hills Estate",
-      "id": 8
+      "name": "JUMEIRAH VILLAGE CIRCLE",
+      "id": 8,
+      "img":"/Jameirah.png"
     }
   ]
 }

@@ -3,12 +3,12 @@ import React from "react";
 import Button from "../UI/Button/Button";
 import { useRouter } from "next/router";
 import Link from "next/link";
-const AnimCard = ({ name, id }) => {
+const AnimCard = ({ name, id, img }) => {
   const router = useRouter();
   return (
     <div className={s.tile}>
       <div className={s.card}>
-        <img src="/City.png" alt="img" />
+        <img src={img} alt="img" />
         <div className={`${s.side} ${s.front}`}>
           <h1>{name}</h1>
         </div>
