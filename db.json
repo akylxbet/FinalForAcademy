@@ -52,7 +52,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters",
       "district": "Downtown",
-      "type":""
+      "type": "Инвестиции"
     },
     {
       "id": 2,
@@ -69,7 +69,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters",
       "district": "Downtown",
-      "type":""
+      "type": "Инвестиции"
     },
     {
       "id": 3,
@@ -85,7 +85,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "Downtown"
+      "district": "Downtown",
+      "type": "Виллы"
     },
     {
       "id": 4,
@@ -101,7 +102,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "Creek Harbour"
+      "district": "Creek Harbour",
+      "type": "Семейный"
     },
     {
       "id": 5,
@@ -117,7 +119,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "JUMEIRAH VILLAGE CIRCLE"
+      "district": "JUMEIRAH VILLAGE CIRCLE",
+      "type": "ВЖХ"
     },
     {
       "id": 6,
@@ -133,7 +136,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "DUBAI Hills Estate"
+      "district": "DUBAI Hills Estate",
+      "type": "Море"
     },
     {
       "id": 7,
@@ -150,6 +154,7 @@
       "map": "/map.svg",
       "maptitle": "Bluewaters",
       "district": "MBR CITY Meydan"
+      ,"type":"Виллы"
     },
     {
       "id": 8,
@@ -165,7 +170,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "Palm Jumeirah"
+      "district": "Palm Jumeirah",
+      "type":"Семейный"
     },
     {
       "id": 9,
@@ -181,7 +187,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "Dubai Marina"
+      "district": "Dubai Marina",
+      "type":"Виллы"
     },
     {
       "id": 10,
@@ -197,7 +204,8 @@
       "grouptitle": "Select Group",
       "map": "/map.svg",
       "maptitle": "Bluewaters",
-      "district": "Dubai Marina"
+      "district": "Dubai Marina",
+      "type":"ВЖХ"
     }
   ],
   "users": [
@@ -284,42 +292,50 @@
     {
       "name": "Downtown",
       "id": 1,
-      "img":"/downtown.png"
+      "img": "/downtown.png",
+      "bigImg": "/Cityinfo.png"
     },
     {
       "name": "Dubai Marina",
       "id": 2,
-      "img":"/marina.png"
+      "img": "/marina.png",
+      "bigImg": "/BigMarina.png"
     },
     {
       "name": "Palm Jumeirah",
       "id": 3,
-      "img":"/Palm.png"
+      "img": "/Palm.png",
+      "bigImg": "/BigPalm.png"
     },
     {
       "name": "MBR CITY Meydan",
       "id": 4,
-      "img":"/Meydan.png"
+      "img": "/Meydan.png",
+      "bigImg": "/BigMeydan.png"
     },
     {
       "name": "Creek Harbour",
       "id": 5,
-      "img":"/GreekHarbor.png"
+      "img": "/GreekHarbor.png",
+      "bigImg": "/BigHarbor.png"
     },
     {
       "name": "Business Bay",
       "id": 6,
-      "img":"/Bussines.png"
+      "img": "/Bussines.png",
+      "bigImg": "/BigBussines.png"
     },
     {
       "name": "DUBAI Hills Estate",
       "id": 7,
-      "img":"/DubaiHills.png"
+      "img": "/DubaiHills.png",
+      "bigImg": "/BigHill.png"
     },
     {
       "name": "JUMEIRAH VILLAGE CIRCLE",
       "id": 8,
-      "img":"/Jameirah.png"
+      "img": "/Jameirah.png",
+      "bigImg": "/BigJameirah.png"
     }
   ]
 }

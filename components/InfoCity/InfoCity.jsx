@@ -34,7 +34,7 @@ const InfoCity = ({name}) => {
     <div className={s.container}>
       <div className={s.content}>
         <div className={s.info}>
-          <img src={data.img} alt="CityInfo" />
+          <img src={data.bigImg} alt="CityInfo" />
           <h1>{data.name}</h1>
           Добро пожаловать в Дубай Марина, жемчужину Дубая и одно из самых
           популярных мест в мире. Дубай Марина — оживленное прибрежное

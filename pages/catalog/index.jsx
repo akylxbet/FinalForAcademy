@@ -174,7 +174,7 @@ const Catalog = () => {
                 price={product.price}
                 term={product.term}
                 dom={product.dom}
-                domtitle={product.domtitle}
+                type={product.type}
                 kvadrat={product.kvadrat}
                 kvadrattitle={product.kvadrattitle}
                 group={product.group}

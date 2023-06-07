@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./CardBlockCard.module.scss";
-const CardBlockCard = ({img, name, price ,term,dom,domtitle,kvadrat,kvadrattitle,group,grouptitle,map,maptitle}) => {
+const CardBlockCard = ({img, name, price ,term,dom,type,kvadrat,kvadrattitle,group,grouptitle,map,maptitle}) => {
   return (
         <div className={s.card_cartochki}>
           <div className={s.card_cartochki_card}>
@@ -15,7 +15,7 @@ const CardBlockCard = ({img, name, price ,term,dom,domtitle,kvadrat,kvadrattitle
             <div className={s.card_cartochki_card_photo}>
               <div className={s.card_cartochki_card_photo_vila}>
                 <img src={dom} alt="dom" />
-                <p>{domtitle}</p>
+                <p>{type}</p>
               </div>
               <div className={s.card_cartochki_card_photo_kvadrat}>
                 <img src={kvadrat} alt="kvadrat" />
