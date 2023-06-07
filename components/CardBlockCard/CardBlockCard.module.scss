@@ -1,5 +1,4 @@
-.card_down { 
-    padding-top: 50px;
+.card_down {
     .card_filtr {
         width: 300px;
         height: 500px;
@@ -8,8 +7,10 @@
 
 }
 .card_cartochki {
+    width: 320px;
+    height: 240px;
     display: flex;
-    padding-top: 50px;
+    margin-bottom: 90px;
     .card_cartochki_card {
         width: 300px;
         height: 180px;

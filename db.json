@@ -75,23 +75,6 @@
       "id": 3,
       "img": "/vila.png",
       "name": "Mushrif Village",
-      "price": 20300,
-      "term": "Срок сдачи проекта: 1-й квартал 2027",
-      "dom": "/dom.svg",
-      "domtitle": "Вилла",
-      "kvadrat": "/kvadrat.svg",
-      "kvadrattitle": "от 262 м2",
-      "group": "/group.svg",
-      "grouptitle": "Select Group",
-      "map": "/map.svg",
-      "maptitle": "Bluewaters",
-      "district": "Downtown",
-      "type": "Виллы"
-    },
-    {
-      "id": 4,
-      "img": "/vila.png",
-      "name": "Mushrif Village",
       "price": 54400,
       "term": "Срок сдачи проекта: 1-й квартал 2027",
       "dom": "/dom.svg",
@@ -106,7 +89,7 @@
       "type": "Семейный"
     },
     {
-      "id": 5,
+      "id": 4,
       "img": "/vila.png",
       "name": "Mushrif Village",
       "price": 78800,
@@ -123,7 +106,7 @@
       "type": "ВЖХ"
     },
     {
-      "id": 6,
+      "id": 5,
       "img": "/vila.png",
       "name": "Mushrif Village",
       "price": 230000,
@@ -140,7 +123,7 @@
       "type": "Море"
     },
     {
-      "id": 7,
+      "id": 6,
       "img": "/vila.png",
       "name": "Mushrif Village",
       "price": 231313,
@@ -157,7 +140,7 @@
       "type": "Виллы"
     },
     {
-      "id": 8,
+      "id": 7,
       "img": "/vila.png",
       "name": "Mushrif Village",
       "price": 23442,
@@ -174,7 +157,7 @@
       "type": "Семейный"
     },
     {
-      "id": 9,
+      "id": 8,
       "img": "/vila.png",
       "name": "Mushrif Village",
       "price": 323231,
@@ -191,7 +174,7 @@
       "type": "Виллы"
     },
     {
-      "id": 10,
+      "id": 9,
       "img": "/vila.png",
       "name": "Mushrif Village",
       "price": 123133,

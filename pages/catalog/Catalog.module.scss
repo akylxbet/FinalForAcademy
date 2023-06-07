@@ -36,12 +36,11 @@
     .Cards {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 7vw;
-      height: auto
-      ;
+      height: auto ;
+      align-items: flex-start;
       .noProducts {
         padding-top: 28vh;
         margin: 0 auto;

@@ -6,6 +6,7 @@ import { getProducts } from "@/redux/reducers/products";
 import { getFavorites } from "@/redux/reducers/favorites";
 import { getBasket } from "@/redux/reducers/basket";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Layout = ({ children }) => {
   let user = {};
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
     <>
     <Header/>
     {children}
+    <Footer/>
     </>
   );
 };
